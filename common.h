@@ -3,6 +3,7 @@
 
 #include <cstdint>
 #include <mpi.h>
+#include <cmath>
 
 // Program Constants
 #define nsteps   1000
@@ -13,7 +14,6 @@
 #define min_r    (cutoff / 100)
 #define dt       0.0005
 
-// Particle Data Structure
 typedef struct particle_t {
     uint64_t id; // Particle ID
     double x;    // Position X
@@ -22,6 +22,19 @@ typedef struct particle_t {
     double vy;   // Velocity Y
     double ax;   // Acceleration X
     double ay;   // Acceleration Y
+
+// Define the equality operator for particle_t
+
+const double epsilon = 1e-9; // Adjust epsilon based on your application's requirements
+
+bool operator==(const particle_t& other) const {
+    return (fabs(x - other.x) < epsilon && 
+            fabs(y - other.y) < epsilon &&
+            fabs(vx - other.vx) < epsilon &&
+            fabs(vy - other.vy) < epsilon &&
+            fabs(ax - other.ax) < epsilon &&
+            fabs(ay - other.ay) < epsilon);
+}
 } particle_t;
 
 extern MPI_Datatype PARTICLE;
