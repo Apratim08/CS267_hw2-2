@@ -5,6 +5,28 @@
 #include <iostream>
 #include <list>
 
+bool particle_t::operator==(const particle_t& other) const {
+    return (fabs(x - other.x) < epsilon &&
+            fabs(y - other.y) < epsilon &&
+            fabs(vx - other.vx) < epsilon &&
+            fabs(vy - other.vy) < epsilon &&
+            fabs(ax - other.ax) < epsilon &&
+            fabs(ay - other.ay) < epsilon);
+}
+
+particle_t& particle_t::operator=(const particle_t& other) {
+    if (this != &other) {
+        id = other.id;
+        x = other.x;
+        y = other.y;
+        vx = other.vx;
+        vy = other.vy;
+        ax = other.ax;
+        ay = other.ay;
+    }
+    return *this;
+}
+
 // Apply the force from neighbor to particle
 void apply_force(particle_t& particle, particle_t& neighbor) {
     // Calculate Distance
@@ -74,9 +96,9 @@ void receive_incoming_parts(std::list<particle_t>& incoming_parts, int incoming_
 
     // Receive each particle one by one and add to the list
     for (int i = 0; i < num_particles; ++i) {
-        particle_t particle;
-        MPI_Recv(&particle, sizeof(particle_t), MPI_BYTE, incoming_rank, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
-        incoming_parts.push_back(particle);
+        particle_t received_particle;
+        MPI_Recv(&received_particle, sizeof(particle_t), MPI_BYTE, incoming_rank, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
+        incoming_parts.push_back(received_particle);
     }
 }
 
@@ -269,5 +291,3 @@ void cleanup() {
     below_ghost_parts.clear();
     incoming_parts.clear();
 }
-
-
