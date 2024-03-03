@@ -4,6 +4,7 @@
 #include <vector>
 #include <iostream>
 #include <list>
+#include <cstdlib> // for exit()
 
 bool particle_t::operator==(const particle_t& other) const {
     return (fabs(x - other.x) < epsilon &&
@@ -102,7 +103,23 @@ void receive_incoming_parts(std::list<particle_t>& incoming_parts, int incoming_
     }
 }
 
-
+// Change particle id to particle index in the array
+static int id_to_index(uint64_t id){
+    return (int)(id - 1);
+}
+static int index_to_id(int index){
+    return (uint64_t)(index + 1);
+}
+// Copy particles for communication 
+static void part_cpy(particle_t& src_part, particle_t& dst_part){
+    dst_part.id = src_part.id;
+    dst_part.x = src_part.x;
+    dst_part.y = src_part.y;
+    dst_part.vx = src_part.vx;
+    dst_part.vy = src_part.vy;
+    dst_part.ax = src_part.ax;
+    dst_part.ay = src_part.ay;
+}
 
 std::list<particle_t> incoming_parts;
 std::list<particle_t> my_parts;
@@ -255,30 +272,52 @@ void simulate_one_step(particle_t* parts, int num_parts, double size, int rank, 
     }
 }
 
-
 #include <algorithm> // for std::sort
 
-void gather_for_save(particle_t* my_parts, int num_parts, double size, int rank, int num_procs) {
-    particle_t* temp_parts = nullptr;
+void gather_for_save(particle_t* parts, int num_parts, double size, int rank, int num_procs) {
+    
+    int* rcounts = nullptr;
+    int* displs = nullptr;
+    particle_t* rbuf = nullptr;
 
-    // Allocate memory on the root process
+    // make an array for sending
+    particle_t* local_parts_array = new particle_t[my_parts.size()];
+    std::copy(my_parts.begin(), my_parts.end(), local_parts_array);
+
+    // get all my_parts sizes first
     if (rank == 0) {
-        temp_parts = new particle_t[num_parts * num_procs];
+        rcounts = (int *)malloc(num_procs*sizeof(int)); 
     }
-
-    // Gather particles to the root process
-    MPI_Gather(my_parts, num_parts, PARTICLE, temp_parts, num_parts, PARTICLE, 0, MPI_COMM_WORLD);
-
-    // Sort the particles on the root process
+    int num = my_parts.size();
+    MPI_Gather( &num, 1, MPI_INT, rcounts, 1, MPI_INT, 0, MPI_COMM_WORLD);
+    
+    /* root now has correct rcounts, using these we set displs[] so 
+     * that data is placed contiguously (or concatenated) at receive end 
+     */ 
     if (rank == 0) {
-        // Sort temp_parts by particle id
-        std::sort(temp_parts, temp_parts + (num_parts * num_procs),
-                  [](const particle_t& a, const particle_t& b) {
-                      return a.id < b.id;
-                  });
+        displs = (int *)malloc(num_procs*sizeof(int)); 
+        displs[0] = 0; 
+        for (int i = 1; i < num_procs; ++i) { 
+            displs[i] = displs[i-1]+rcounts[i-1]; 
+        } 
+        /* And, create receive buffer  */ 
+        rbuf = new particle_t[num_parts];
+    }
+    MPI_Gatherv(local_parts_array, my_parts.size(), PARTICLE, rbuf, rcounts, displs, PARTICLE, 0, MPI_COMM_WORLD); 
+    delete[] local_parts_array;
 
-        // Remember to free the allocated memory
-        delete[] temp_parts;
+    // on root, edit the entire parts array based on info in rbuf
+    if (rank == 0) {
+        std::cout << "Could gatherv: " << rbuf[0].x << std::endl;
+        for (int i = 0; i < num_parts; ++i) {
+            int ori_index = id_to_index(rbuf[i].id);
+            part_cpy(rbuf[i], parts[ori_index]);
+        }
+        std::cout << "Could copy particles: " << rbuf[0].x << std::endl;
+        // free memory on root
+        free(rcounts);
+        free(displs);
+        std::cout << "Could free memory: " << rbuf[0].x << std::endl;
     }
 }
 
