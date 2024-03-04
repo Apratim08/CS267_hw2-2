@@ -306,19 +306,21 @@ void gather_for_save(particle_t* parts, int num_parts, double size, int rank, in
     MPI_Gatherv(local_parts_array, my_parts.size(), PARTICLE, rbuf, rcounts, displs, PARTICLE, 0, MPI_COMM_WORLD); 
     delete[] local_parts_array;
 
-    // on root, edit the entire parts array based on info in rbuf
-    if (rank == 0) {
-        std::cout << "Could gatherv: " << rbuf[0].x << std::endl;
-        for (int i = 0; i < num_parts; ++i) {
-            int ori_index = id_to_index(rbuf[i].id);
-            part_cpy(rbuf[i], parts[ori_index]);
-        }
-        std::cout << "Could copy particles: " << rbuf[0].x << std::endl;
-        // free memory on root
-        free(rcounts);
-        free(displs);
-        std::cout << "Could free memory: " << rbuf[0].x << std::endl;
-    }
+    // // on root, edit the entire parts array based on info in rbuf
+    // if (rank == 0) {
+    //     std::cout << "Could gatherv: " << rbuf[0].x << std::endl;
+    //     for (int i = 0; i < num_parts; ++i) {
+    //         std::cout << "i: " << i << std::endl;
+    //         int ori_index = id_to_index(rbuf[i].id);
+    //         part_cpy(rbuf[i], parts[ori_index]);
+    //     }
+    //     std::cout << "Could copy particles: " << rbuf[0].x << std::endl;
+    //     // free memory on root
+    //     free(rcounts);
+    //     free(displs);
+    //     std::cout << "Could free memory: " << rbuf[0].x << std::endl;
+    // }
+    exit(0);
 }
 
 void cleanup() {
