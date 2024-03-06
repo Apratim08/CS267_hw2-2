@@ -1,10 +1,11 @@
 #include "common.h"
 #include <mpi.h>
-#include <cmath>
+#include <cmath>    
 #include <vector>
 #include <iostream>
 #include <list>
 #include <cstdlib> // for exit()
+#include <algorithm> // for std::sort
 
 bool particle_t::operator==(const particle_t& other) const {
     return (fabs(x - other.x) < epsilon &&
@@ -272,7 +273,6 @@ void simulate_one_step(particle_t* parts, int num_parts, double size, int rank, 
     }
 }
 
-#include <algorithm> // for std::sort
 
 void gather_for_save(particle_t* parts, int num_parts, double size, int rank, int num_procs) {
     
@@ -281,46 +281,83 @@ void gather_for_save(particle_t* parts, int num_parts, double size, int rank, in
     particle_t* rbuf = nullptr;
 
     // make an array for sending
-    particle_t* local_parts_array = new particle_t[my_parts.size()];
-    std::copy(my_parts.begin(), my_parts.end(), local_parts_array);
+    //particle_t* local_parts_array = new particle_t[my_parts.size()];
+    
+    //std::copy(my_parts.begin(), my_parts.end(), local_parts_array);
 
     // get all my_parts sizes first
-    if (rank == 0) {
-        rcounts = (int *)malloc(num_procs*sizeof(int)); 
-    }
+    //if (rank == 0) {
+    //    rcounts = new int[num_procs];
+    //}
+    
     int num = my_parts.size();
-    MPI_Gather( &num, 1, MPI_INT, rcounts, 1, MPI_INT, 0, MPI_COMM_WORLD);
+    int* local_part_counts = new int[num_procs];
+    MPI_Gather( &num, 1, MPI_INT, local_part_counts, 1, MPI_INT, 0, MPI_COMM_WORLD);
     
     /* root now has correct rcounts, using these we set displs[] so 
      * that data is placed contiguously (or concatenated) at receive end 
      */ 
+    int total_parts = 0;
     if (rank == 0) {
-        displs = (int *)malloc(num_procs*sizeof(int)); 
+        rcounts = new int[num_procs];
+        displs = new int[num_procs];
         displs[0] = 0; 
         for (int i = 1; i < num_procs; ++i) { 
             displs[i] = displs[i-1]+rcounts[i-1]; 
         } 
+        std::copy(local_part_counts, local_part_counts + num_procs, rcounts);
         /* And, create receive buffer  */ 
-        rbuf = new particle_t[num_parts];
+        for (int i = 0; i < num_procs; ++i) {
+            total_parts += local_part_counts[i];
+        }
+        rbuf = new particle_t[total_parts];
     }
-    MPI_Gatherv(local_parts_array, my_parts.size(), PARTICLE, rbuf, rcounts, displs, PARTICLE, 0, MPI_COMM_WORLD); 
-    delete[] local_parts_array;
 
-    // // on root, edit the entire parts array based on info in rbuf
+    particle_t* local_parts_array = new particle_t[my_parts.size()];
+    std::copy(my_parts.begin(), my_parts.end(), local_parts_array);
+    MPI_Gatherv(local_parts_array, num, PARTICLE, rbuf, rcounts, displs, PARTICLE, 0, MPI_COMM_WORLD); 
+    // delete[] local_parts_array;
+
+    // on root, edit the entire parts array based on info in rbuf
     // if (rank == 0) {
-    //     std::cout << "Could gatherv: " << rbuf[0].x << std::endl;
-    //     for (int i = 0; i < num_parts; ++i) {
-    //         std::cout << "i: " << i << std::endl;
-    //         int ori_index = id_to_index(rbuf[i].id);
-    //         part_cpy(rbuf[i], parts[ori_index]);
-    //     }
-    //     std::cout << "Could copy particles: " << rbuf[0].x << std::endl;
+    //    std::cout << "Could gatherv: " << rbuf[0].x << std::endl;
+    //   for (int i = 0; i < num_parts; ++i) {
+    //        std::cout << "i: " << i << std::endl;
+    //        if (i >= 0 && i < num_parts) {
+
+    //            int ori_index = id_to_index(rbuf[i].id);
+    //            if (ori_index >= 0 && ori_index < num_parts) {
+    //                part_cpy(rbuf[i], parts[ori_index]);
+    //            } else {
+    //                std::cerr << "Error: Invalid ori_index" << ori_index << std::endl;
+    //            }
+    //        } else {
+    //            std::cerr << "Error: Invalid index" << i << std::endl;
+    //        }
+    //    }
+    //    std::cout << "Could copy particles: " << rbuf[0].x << std::endl;
     //     // free memory on root
-    //     free(rcounts);
-    //     free(displs);
-    //     std::cout << "Could free memory: " << rbuf[0].x << std::endl;
+    // //    free(rcounts);
+    // //    free(displs);
+    //    std::cout << "Could free memory: " << rbuf[0].x << std::endl;
+    //    delete[] rbuf;
+    //    delete[] rcounts;
+    //    delete[] displs;
     // }
-    exit(0);
+    if (rank == 0) {
+        for (int i = 0; i < total_parts; ++i) {
+            int ori_index = id_to_index(rbuf[i].id);
+            part_cpy(rbuf[i], parts[ori_index]);
+        }
+
+        delete[] rcounts;
+        delete[] displs;
+        delete[] rbuf;
+ 
+    }
+    delete[] local_part_counts;
+    delete[] local_parts_array;
+    //exit(0);
 }
 
 void cleanup() {
