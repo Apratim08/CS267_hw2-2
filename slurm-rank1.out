@@ -1,0 +1,2513 @@
+Particle 0: Position = 0.299985, Bin = 2, Rank = 1
+Particle 1: Position = 0.642824, Bin = 4, Rank = 1
+Particle 2: Position = 0.214275, Bin = 1, Rank = 1
+Particle 3: Position = 0.17142, Bin = 1, Rank = 1
+Particle 4: Position = 0.128565, Bin = 0, Rank = 1
+Particle 5: Position = 0.449977, Bin = 3, Rank = 1
+Particle 6: Position = 0.364267, Bin = 2, Rank = 1
+Particle 7: Position = 0.214275, Bin = 1, Rank = 1
+Particle 8: Position = 0.149992, Bin = 1, Rank = 1
+Particle 9: Position = 0.17142, Bin = 1, Rank = 1
+Particle 10: Position = 0.449977, Bin = 3, Rank = 1
+Particle 11: Position = 0.321412, Bin = 2, Rank = 1
+Particle 12: Position = 0.107137, Bin = 0, Rank = 1
+Particle 13: Position = 0.535687, Bin = 3, Rank = 1
+Particle 14: Position = 0.642824, Bin = 4, Rank = 1
+Particle 15: Position = 0.0642824, Bin = 0, Rank = 1
+Particle 16: Position = 0.578542, Bin = 4, Rank = 1
+Particle 17: Position = 0.557114, Bin = 3, Rank = 1
+Particle 18: Position = 0.042855, Bin = 0, Rank = 1
+Particle 19: Position = 0.042855, Bin = 0, Rank = 1
+Particle 20: Position = 0.0857099, Bin = 0, Rank = 1
+Particle 21: Position = 0.449977, Bin = 3, Rank = 1
+Particle 22: Position = 0.364267, Bin = 2, Rank = 1
+Particle 23: Position = 0.192847, Bin = 1, Rank = 1
+Particle 24: Position = 0.449977, Bin = 3, Rank = 1
+Particle 25: Position = 0.278557, Bin = 1, Rank = 1
+Particle 26: Position = 0.492832, Bin = 3, Rank = 1
+Rank: 2
+Init size: 161
+Particle count for rank 2: 161
+Apply force rank: 2
+Move particle rank: 2
+Rank: 3
+Init size: 197
+Particle count for rank 3: 197
+Apply force rank: 3
+Move particle rank: 3
+Particle 27: Position = 0.449977, Bin = 3, Rank = 1
+Particle 28: Position = 0.192847, Bin = 1, Rank = 1
+Particle 29: Position = 0.149992, Bin = 1, Rank = 1
+Particle 30: Position = 0.299985, Bin = 2, Rank = 1
+Particle 31: Position = 0.0642824, Bin = 0, Rank = 1
+Particle 32: Position = 0.192847, Bin = 1, Rank = 1
+Particle 33: Position = 0.34284, Bin = 2, Rank = 1
+Particle 34: Position = 0.449977, Bin = 3, Rank = 1
+Particle 35: Position = 0.599969, Bin = 4, Rank = 1
+Particle 36: Position = 0.321412, Bin = 2, Rank = 1
+Particle 37: Position = 0.385695, Bin = 2, Rank = 1
+Particle 38: Position = 0.107137, Bin = 0, Rank = 1
+Particle 39: Position = 0.17142, Bin = 1, Rank = 1
+Particle 40: Position = 0.0857099, Bin = 0, Rank = 1
+Particle 41: Position = 0.621397, Bin = 4, Rank = 1
+Particle 42: Position = 0.278557, Bin = 1, Rank = 1
+Particle 43: Position = 0.492832, Bin = 3, Rank = 1
+Particle 44: Position = 0.42855, Bin = 3, Rank = 1
+Particle 45: Position = 0.514259, Bin = 3, Rank = 1
+Particle 46: Position = 0.385695, Bin = 2, Rank = 1
+Particle 47: Position = 0.364267, Bin = 2, Rank = 1
+Particle 48: Position = 0.107137, Bin = 0, Rank = 1
+Particle 49: Position = 0.25713, Bin = 1, Rank = 1
+Particle 50: Position = 0.107137, Bin = 0, Rank = 1
+Particle 51: Position = 0.235702, Bin = 1, Rank = 1
+Particle 52: Position = 0.492832, Bin = 3, Rank = 1
+Particle 53: Position = 0.0857099, Bin = 0, Rank = 1
+Particle 54: Position = 0.407122, Bin = 2, Rank = 1
+Particle 55: Position = 0.235702, Bin = 1, Rank = 1
+Particle 56: Position = 0.17142, Bin = 1, Rank = 1
+Particle 57: Position = 0.492832, Bin = 3, Rank = 1
+Particle 58: Position = 0.621397, Bin = 4, Rank = 1
+Particle 59: Position = 0.321412, Bin = 2, Rank = 1
+Particle 60: Position = 0.0857099, Bin = 0, Rank = 1
+Particle 61: Position = 0.042855, Bin = 0, Rank = 1
+Particle 62: Position = 0.364267, Bin = 2, Rank = 1
+Particle 63: Position = 0.25713, Bin = 1, Rank = 1
+Particle 64: Position = 0.578542, Bin = 4, Rank = 1
+Particle 65: Position = 0.192847, Bin = 1, Rank = 1
+Particle 66: Position = 0.407122, Bin = 2, Rank = 1
+Particle 67: Position = 0.364267, Bin = 2, Rank = 1
+Particle 68: Position = 0.557114, Bin = 3, Rank = 1
+Particle 69: Position = 0.299985, Bin = 2, Rank = 1
+Particle 70: Position = 0.407122, Bin = 2, Rank = 1
+Particle 71: Position = 0.17142, Bin = 1, Rank = 1
+Particle 72: Position = 0.449977, Bin = 3, Rank = 1
+Particle 73: Position = 0.0642824, Bin = 0, Rank = 1
+Particle 74: Position = 0.0857099, Bin = 0, Rank = 1
+Particle 75: Position = 0.128565, Bin = 0, Rank = 1
+Particle 76: Position = 0.642824, Bin = 4, Rank = 1
+Particle 77: Position = 0.321412, Bin = 2, Rank = 1
+Particle 78: Position = 0.578542, Bin = 4, Rank = 1
+Particle 79: Position = 0.321412, Bin = 2, Rank = 1
+Particle 80: Position = 0.0214275, Bin = 0, Rank = 1
+Particle 81: Position = 0.642824, Bin = 4, Rank = 1
+Particle 82: Position = 0.17142, Bin = 1, Rank = 1
+Particle 83: Position = 0.192847, Bin = 1, Rank = 1
+Particle 84: Position = 0.34284, Bin = 2, Rank = 1
+Particle 85: Position = 0.642824, Bin = 4, Rank = 1
+Particle 86: Position = 0.17142, Bin = 1, Rank = 1
+Particle 87: Position = 0.364267, Bin = 2, Rank = 1
+Particle 88: Position = 0.34284, Bin = 2, Rank = 1
+Particle 89: Position = 0.514259, Bin = 3, Rank = 1
+Particle 90: Position = 0.149992, Bin = 1, Rank = 1
+Particle 91: Position = 0.385695, Bin = 2, Rank = 1
+Particle 92: Position = 0.535687, Bin = 3, Rank = 1
+Particle 93: Position = 0.278557, Bin = 1, Rank = 1
+Particle 94: Position = 0.0857099, Bin = 0, Rank = 1
+Particle 95: Position = 0.664252, Bin = 4, Rank = 1
+Particle 96: Position = 0.042855, Bin = 0, Rank = 1
+Particle 97: Position = 0.492832, Bin = 3, Rank = 1
+Particle 98: Position = 0.449977, Bin = 3, Rank = 1
+Particle 99: Position = 0.642824, Bin = 4, Rank = 1
+Particle 100: Position = 0.621397, Bin = 4, Rank = 1
+Particle 101: Position = 0.235702, Bin = 1, Rank = 1
+Particle 102: Position = 0.128565, Bin = 0, Rank = 1
+Particle 103: Position = 0.107137, Bin = 0, Rank = 1
+Particle 104: Position = 0.128565, Bin = 0, Rank = 1
+Particle 105: Position = 0.235702, Bin = 1, Rank = 1
+Particle 106: Position = 0.514259, Bin = 3, Rank = 1
+Particle 107: Position = 0.192847, Bin = 1, Rank = 1
+Particle 108: Position = 0.385695, Bin = 2, Rank = 1
+Particle 109: Position = 0.535687, Bin = 3, Rank = 1
+Particle 110: Position = 0.0214275, Bin = 0, Rank = 1
+Particle 111: Position = 0.042855, Bin = 0, Rank = 1
+Particle 112: Position = 0.364267, Bin = 2, Rank = 1
+Particle 113: Position = 0.278557, Bin = 1, Rank = 1
+Particle 114: Position = 0.599969, Bin = 4, Rank = 1
+Particle 115: Position = 0.107137, Bin = 0, Rank = 1
+Particle 116: Position = 0.34284, Bin = 2, Rank = 1
+Particle 117: Position = 0.557114, Bin = 3, Rank = 1
+Particle 118: Position = 0.17142, Bin = 1, Rank = 1
+Particle 119: Position = 0.471405, Bin = 3, Rank = 1
+Particle 120: Position = 0.385695, Bin = 2, Rank = 1
+Particle 121: Position = 0.0642824, Bin = 0, Rank = 1
+Particle 122: Position = 0.664252, Bin = 4, Rank = 1
+Particle 123: Position = 0.664252, Bin = 4, Rank = 1
+Particle 124: Position = 0.128565, Bin = 0, Rank = 1
+Particle 125: Position = 0.34284, Bin = 2, Rank = 1
+Particle 126: Position = 0.557114, Bin = 3, Rank = 1
+Particle 127: Position = 0.192847, Bin = 1, Rank = 1
+Particle 128: Position = 0.449977, Bin = 3, Rank = 1
+Particle 129: Position = 0.621397, Bin = 4, Rank = 1
+Particle 130: Position = 0.557114, Bin = 3, Rank = 1
+Particle 131: Position = 0.25713, Bin = 1, Rank = 1
+Particle 132: Position = 0.685679, Bin = 4, Rank = 1
+Particle 133: Position = 0.235702, Bin = 1, Rank = 1
+Particle 134: Position = 0.34284, Bin = 2, Rank = 1
+Particle 135: Position = 0.0214275, Bin = 0, Rank = 1
+Particle 136: Position = 0.235702, Bin = 1, Rank = 1
+Particle 137: Position = 0.107137, Bin = 0, Rank = 1
+Particle 138: Position = 0.664252, Bin = 4, Rank = 1
+Particle 139: Position = 0.471405, Bin = 3, Rank = 1
+Particle 140: Position = 0.235702, Bin = 1, Rank = 1
+Particle 141: Position = 0.0214275, Bin = 0, Rank = 1
+Particle 142: Position = 0.0857099, Bin = 0, Rank = 1
+Particle 143: Position = 0.407122, Bin = 2, Rank = 1
+Particle 144: Position = 0.621397, Bin = 4, Rank = 1
+Particle 145: Position = 0.557114, Bin = 3, Rank = 1
+Particle 146: Position = 0.0214275, Bin = 0, Rank = 1
+Particle 147: Position = 0.0642824, Bin = 0, Rank = 1
+Particle 148: Position = 0.0857099, Bin = 0, Rank = 1
+Particle 149: Position = 0.321412, Bin = 2, Rank = 1
+Particle 150: Position = 0.535687, Bin = 3, Rank = 1
+Particle 151: Position = 0.514259, Bin = 3, Rank = 1
+Particle 152: Position = 0.492832, Bin = 3, Rank = 1
+Particle 153: Position = 0.557114, Bin = 3, Rank = 1
+Particle 154: Position = 0.321412, Bin = 2, Rank = 1
+Particle 155: Position = 0.599969, Bin = 4, Rank = 1
+Particle 156: Position = 0.278557, Bin = 1, Rank = 1
+Particle 157: Position = 0.621397, Bin = 4, Rank = 1
+Particle 158: Position = 0.34284, Bin = 2, Rank = 1
+Particle 159: Position = 0.149992, Bin = 1, Rank = 1
+Particle 160: Position = 0.578542, Bin = 4, Rank = 1
+Particle 161: Position = 0.471405, Bin = 3, Rank = 1
+Particle 162: Position = 0.107137, Bin = 0, Rank = 1
+Particle 163: Position = 0.34284, Bin = 2, Rank = 1
+Particle 164: Position = 0.042855, Bin = 0, Rank = 1
+Particle 165: Position = 0.042855, Bin = 0, Rank = 1
+Particle 166: Position = 0.514259, Bin = 3, Rank = 1
+Particle 167: Position = 0.492832, Bin = 3, Rank = 1
+Particle 168: Position = 0.214275, Bin = 1, Rank = 1
+Particle 169: Position = 0.0642824, Bin = 0, Rank = 1
+Particle 170: Position = 0.471405, Bin = 3, Rank = 1
+Particle 171: Position = 0.235702, Bin = 1, Rank = 1
+Particle 172: Position = 0.17142, Bin = 1, Rank = 1
+Particle 173: Position = 0.642824, Bin = 4, Rank = 1
+Particle 174: Position = 0.492832, Bin = 3, Rank = 1
+Particle 175: Position = 0.449977, Bin = 3, Rank = 1
+Particle 176: Position = 0.492832, Bin = 3, Rank = 1
+Particle 177: Position = 0.149992, Bin = 1, Rank = 1
+Particle 178: Position = 0.599969, Bin = 4, Rank = 1
+Particle 179: Position = 0.149992, Bin = 1, Rank = 1
+Particle 180: Position = 0.235702, Bin = 1, Rank = 1
+Particle 181: Position = 0.0857099, Bin = 0, Rank = 1
+Particle 182: Position = 0.235702, Bin = 1, Rank = 1
+Particle 183: Position = 0.599969, Bin = 4, Rank = 1
+Particle 184: Position = 0.128565, Bin = 0, Rank = 1
+Particle 185: Position = 0.0214275, Bin = 0, Rank = 1
+Particle 186: Position = 0.449977, Bin = 3, Rank = 1
+Particle 187: Position = 0.578542, Bin = 4, Rank = 1
+Particle 188: Position = 0.599969, Bin = 4, Rank = 1
+Particle 189: Position = 0.0214275, Bin = 0, Rank = 1
+Particle 190: Position = 0.471405, Bin = 3, Rank = 1
+Particle 191: Position = 0.578542, Bin = 4, Rank = 1
+Particle 192: Position = 0.642824, Bin = 4, Rank = 1
+Particle 193: Position = 0.599969, Bin = 4, Rank = 1
+Particle 194: Position = 0.42855, Bin = 3, Rank = 1
+Particle 195: Position = 0.042855, Bin = 0, Rank = 1
+Particle 196: Position = 0.192847, Bin = 1, Rank = 1
+Particle 197: Position = 0.42855, Bin = 3, Rank = 1
+Particle 198: Position = 0.042855, Bin = 0, Rank = 1
+Particle 199: Position = 0.557114, Bin = 3, Rank = 1
+Particle 200: Position = 0.557114, Bin = 3, Rank = 1
+Particle 201: Position = 0.599969, Bin = 4, Rank = 1
+Particle 202: Position = 0.578542, Bin = 4, Rank = 1
+Particle 203: Position = 0.299985, Bin = 2, Rank = 1
+Particle 204: Position = 0.192847, Bin = 1, Rank = 1
+Particle 205: Position = 0.599969, Bin = 4, Rank = 1
+Particle 206: Position = 0.17142, Bin = 1, Rank = 1
+Particle 207: Position = 0.299985, Bin = 2, Rank = 1
+Particle 208: Position = 0.149992, Bin = 1, Rank = 1
+Particle 209: Position = 0.235702, Bin = 1, Rank = 1
+Particle 210: Position = 0.278557, Bin = 1, Rank = 1
+Particle 211: Position = 0.0214275, Bin = 0, Rank = 1
+Particle 212: Position = 0.149992, Bin = 1, Rank = 1
+Particle 213: Position = 0.042855, Bin = 0, Rank = 1
+Particle 214: Position = 0.34284, Bin = 2, Rank = 1
+Particle 215: Position = 0.664252, Bin = 4, Rank = 1
+Particle 216: Position = 0.278557, Bin = 1, Rank = 1
+Particle 217: Position = 0.128565, Bin = 0, Rank = 1
+Particle 218: Position = 0.34284, Bin = 2, Rank = 1
+Particle 219: Position = 0.0857099, Bin = 0, Rank = 1
+Particle 220: Position = 0.0857099, Bin = 0, Rank = 1
+Particle 221: Position = 0.535687, Bin = 3, Rank = 1
+Particle 222: Position = 0.535687, Bin = 3, Rank = 1
+Particle 223: Position = 0.385695, Bin = 2, Rank = 1
+Particle 224: Position = 0.17142, Bin = 1, Rank = 1
+Particle 225: Position = 0.042855, Bin = 0, Rank = 1
+Particle 226: Position = 0.535687, Bin = 3, Rank = 1
+Particle 227: Position = 0.599969, Bin = 4, Rank = 1
+Particle 228: Position = 0.42855, Bin = 3, Rank = 1
+Particle 229: Position = 0.535687, Bin = 3, Rank = 1
+Particle 230: Position = 0.34284, Bin = 2, Rank = 1
+Particle 231: Position = 0.407122, Bin = 2, Rank = 1
+Particle 232: Position = 0.42855, Bin = 3, Rank = 1
+Particle 233: Position = 0.321412, Bin = 2, Rank = 1
+Particle 234: Position = 0.385695, Bin = 2, Rank = 1
+Particle 235: Position = 0.17142, Bin = 1, Rank = 1
+Particle 236: Position = 0.34284, Bin = 2, Rank = 1
+Particle 237: Position = 0.578542, Bin = 4, Rank = 1
+Particle 238: Position = 0.578542, Bin = 4, Rank = 1
+Particle 239: Position = 0.042855, Bin = 0, Rank = 1
+Particle 240: Position = 0.17142, Bin = 1, Rank = 1
+Particle 241: Position = 0.664252, Bin = 4, Rank = 1
+Particle 242: Position = 0.278557, Bin = 1, Rank = 1
+Particle 243: Position = 0.492832, Bin = 3, Rank = 1
+Particle 244: Position = 0.514259, Bin = 3, Rank = 1
+Particle 245: Position = 0.34284, Bin = 2, Rank = 1
+Particle 246: Position = 0.0857099, Bin = 0, Rank = 1
+Particle 247: Position = 0.449977, Bin = 3, Rank = 1
+Particle 248: Position = 0.0857099, Bin = 0, Rank = 1
+Particle 249: Position = 0.471405, Bin = 3, Rank = 1
+Particle 250: Position = 0.599969, Bin = 4, Rank = 1
+Particle 251: Position = 0.407122, Bin = 2, Rank = 1
+Particle 252: Position = 0.364267, Bin = 2, Rank = 1
+Particle 253: Position = 0.42855, Bin = 3, Rank = 1
+Particle 254: Position = 0.299985, Bin = 2, Rank = 1
+Particle 255: Position = 0.25713, Bin = 1, Rank = 1
+Particle 256: Position = 0.128565, Bin = 0, Rank = 1
+Particle 257: Position = 0.34284, Bin = 2, Rank = 1
+Particle 258: Position = 0.514259, Bin = 3, Rank = 1
+Particle 259: Position = 0.557114, Bin = 3, Rank = 1
+Particle 260: Position = 0.107137, Bin = 0, Rank = 1
+Particle 261: Position = 0.149992, Bin = 1, Rank = 1
+Particle 262: Position = 0.0214275, Bin = 0, Rank = 1
+Particle 263: Position = 0.0642824, Bin = 0, Rank = 1
+Particle 264: Position = 0.192847, Bin = 1, Rank = 1
+Particle 265: Position = 0.407122, Bin = 2, Rank = 1
+Particle 266: Position = 0.278557, Bin = 1, Rank = 1
+Particle 267: Position = 0.364267, Bin = 2, Rank = 1
+Particle 268: Position = 0.0214275, Bin = 0, Rank = 1
+Particle 269: Position = 0.664252, Bin = 4, Rank = 1
+Particle 270: Position = 0.471405, Bin = 3, Rank = 1
+Particle 271: Position = 0.25713, Bin = 1, Rank = 1
+Particle 272: Position = 0.042855, Bin = 0, Rank = 1
+Particle 273: Position = 0.192847, Bin = 1, Rank = 1
+Particle 274: Position = 0.321412, Bin = 2, Rank = 1
+Particle 275: Position = 0.642824, Bin = 4, Rank = 1
+Particle 276: Position = 0.599969, Bin = 4, Rank = 1
+Particle 277: Position = 0.664252, Bin = 4, Rank = 1
+Particle 278: Position = 0.214275, Bin = 1, Rank = 1
+Particle 279: Position = 0.578542, Bin = 4, Rank = 1
+Particle 280: Position = 0.0857099, Bin = 0, Rank = 1
+Particle 281: Position = 0.514259, Bin = 3, Rank = 1
+Particle 282: Position = 0.042855, Bin = 0, Rank = 1
+Particle 283: Position = 0.278557, Bin = 1, Rank = 1
+Particle 284: Position = 0.0214275, Bin = 0, Rank = 1
+Particle 285: Position = 0.492832, Bin = 3, Rank = 1
+Particle 286: Position = 0.364267, Bin = 2, Rank = 1
+Particle 287: Position = 0.471405, Bin = 3, Rank = 1
+Particle 288: Position = 0.235702, Bin = 1, Rank = 1
+Particle 289: Position = 0.042855, Bin = 0, Rank = 1
+Particle 290: Position = 0.192847, Bin = 1, Rank = 1
+Particle 291: Position = 0.492832, Bin = 3, Rank = 1
+Particle 292: Position = 0.385695, Bin = 2, Rank = 1
+Particle 293: Position = 0.34284, Bin = 2, Rank = 1
+Particle 294: Position = 0.535687, Bin = 3, Rank = 1
+Particle 295: Position = 0.0642824, Bin = 0, Rank = 1
+Particle 296: Position = 0.449977, Bin = 3, Rank = 1
+Particle 297: Position = 0.42855, Bin = 3, Rank = 1
+Particle 298: Position = 0.664252, Bin = 4, Rank = 1
+Particle 299: Position = 0.042855, Bin = 0, Rank = 1
+Particle 300: Position = 0.107137, Bin = 0, Rank = 1
+Particle 301: Position = 0.535687, Bin = 3, Rank = 1
+Particle 302: Position = 0.471405, Bin = 3, Rank = 1
+Particle 303: Position = 0.364267, Bin = 2, Rank = 1
+Particle 304: Position = 0.42855, Bin = 3, Rank = 1
+Particle 305: Position = 0.278557, Bin = 1, Rank = 1
+Particle 306: Position = 0.514259, Bin = 3, Rank = 1
+Particle 307: Position = 0.42855, Bin = 3, Rank = 1
+Particle 308: Position = 0.0857099, Bin = 0, Rank = 1
+Particle 309: Position = 0.299985, Bin = 2, Rank = 1
+Particle 310: Position = 0.149992, Bin = 1, Rank = 1
+Particle 311: Position = 0.578542, Bin = 4, Rank = 1
+Particle 312: Position = 0.25713, Bin = 1, Rank = 1
+Particle 313: Position = 0.364267, Bin = 2, Rank = 1
+Particle 314: Position = 0.535687, Bin = 3, Rank = 1
+Particle 315: Position = 0.0214275, Bin = 0, Rank = 1
+Particle 316: Position = 0.471405, Bin = 3, Rank = 1
+Particle 317: Position = 0.149992, Bin = 1, Rank = 1
+Particle 318: Position = 0.407122, Bin = 2, Rank = 1
+Particle 319: Position = 0.621397, Bin = 4, Rank = 1
+Particle 320: Position = 0.149992, Bin = 1, Rank = 1
+Particle 321: Position = 0.407122, Bin = 2, Rank = 1
+Particle 322: Position = 0.321412, Bin = 2, Rank = 1
+Particle 323: Position = 0.407122, Bin = 2, Rank = 1
+Particle 324: Position = 0.149992, Bin = 1, Rank = 1
+Particle 325: Position = 0.514259, Bin = 3, Rank = 1
+Particle 326: Position = 0.578542, Bin = 4, Rank = 1
+Particle 327: Position = 0.385695, Bin = 2, Rank = 1
+Particle 328: Position = 0.192847, Bin = 1, Rank = 1
+Particle 329: Position = 0.42855, Bin = 3, Rank = 1
+Particle 330: Position = 0.42855, Bin = 3, Rank = 1
+Particle 331: Position = 0.278557, Bin = 1, Rank = 1
+Particle 332: Position = 0.514259, Bin = 3, Rank = 1
+Particle 333: Position = 0.0642824, Bin = 0, Rank = 1
+Particle 334: Position = 0.107137, Bin = 0, Rank = 1
+Particle 335: Position = 0.0857099, Bin = 0, Rank = 1
+Particle 336: Position = 0.599969, Bin = 4, Rank = 1
+Particle 337: Position = 0.42855, Bin = 3, Rank = 1
+Particle 338: Position = 0.535687, Bin = 3, Rank = 1
+Particle 339: Position = 0.557114, Bin = 3, Rank = 1
+Particle 340: Position = 0.25713, Bin = 1, Rank = 1
+Particle 341: Position = 0.192847, Bin = 1, Rank = 1
+Particle 342: Position = 0.107137, Bin = 0, Rank = 1
+Particle 343: Position = 0.664252, Bin = 4, Rank = 1
+Particle 344: Position = 0.642824, Bin = 4, Rank = 1
+Particle 345: Position = 0.25713, Bin = 1, Rank = 1
+Particle 346: Position = 0.642824, Bin = 4, Rank = 1
+Particle 347: Position = 0.214275, Bin = 1, Rank = 1
+Particle 348: Position = 0.664252, Bin = 4, Rank = 1
+Particle 349: Position = 0.514259, Bin = 3, Rank = 1
+Particle 350: Position = 0.0214275, Bin = 0, Rank = 1
+Particle 351: Position = 0.0857099, Bin = 0, Rank = 1
+Particle 352: Position = 0.214275, Bin = 1, Rank = 1
+Particle 353: Position = 0.149992, Bin = 1, Rank = 1
+Particle 354: Position = 0.578542, Bin = 4, Rank = 1
+Particle 355: Position = 0.192847, Bin = 1, Rank = 1
+Particle 356: Position = 0.471405, Bin = 3, Rank = 1
+Particle 357: Position = 0.278557, Bin = 1, Rank = 1
+Particle 358: Position = 0.214275, Bin = 1, Rank = 1
+Particle 359: Position = 0.514259, Bin = 3, Rank = 1
+Particle 360: Position = 0.214275, Bin = 1, Rank = 1
+Particle 361: Position = 0.25713, Bin = 1, Rank = 1
+Particle 362: Position = 0.214275, Bin = 1, Rank = 1
+Particle 363: Position = 0.535687, Bin = 3, Rank = 1
+Particle 364: Position = 0.535687, Bin = 3, Rank = 1
+Particle 365: Position = 0.449977, Bin = 3, Rank = 1
+Particle 366: Position = 0.107137, Bin = 0, Rank = 1
+Particle 367: Position = 0.664252, Bin = 4, Rank = 1
+Particle 368: Position = 0.621397, Bin = 4, Rank = 1
+Particle 369: Position = 0.385695, Bin = 2, Rank = 1
+Particle 370: Position = 0.471405, Bin = 3, Rank = 1
+Particle 371: Position = 0.492832, Bin = 3, Rank = 1
+Particle 372: Position = 0.514259, Bin = 3, Rank = 1
+Particle 373: Position = 0.17142, Bin = 1, Rank = 1
+Particle 374: Position = 0.621397, Bin = 4, Rank = 1
+Particle 375: Position = 0.492832, Bin = 3, Rank = 1
+Particle 376: Position = 0.299985, Bin = 2, Rank = 1
+Particle 377: Position = 0.621397, Bin = 4, Rank = 1
+Particle 378: Position = 0.385695, Bin = 2, Rank = 1
+Particle 379: Position = 0.535687, Bin = 3, Rank = 1
+Particle 380: Position = 0.214275, Bin = 1, Rank = 1
+Particle 381: Position = 0.235702, Bin = 1, Rank = 1
+Particle 382: Position = 0.471405, Bin = 3, Rank = 1
+Particle 383: Position = 0.557114, Bin = 3, Rank = 1
+Particle 384: Position = 0.128565, Bin = 0, Rank = 1
+Particle 385: Position = 0.34284, Bin = 2, Rank = 1
+Particle 386: Position = 0.149992, Bin = 1, Rank = 1
+Particle 387: Position = 0.599969, Bin = 4, Rank = 1
+Particle 388: Position = 0.321412, Bin = 2, Rank = 1
+Particle 389: Position = 0.25713, Bin = 1, Rank = 1
+Particle 390: Position = 0.192847, Bin = 1, Rank = 1
+Particle 391: Position = 0.17142, Bin = 1, Rank = 1
+Particle 392: Position = 0.599969, Bin = 4, Rank = 1
+Particle 393: Position = 0.192847, Bin = 1, Rank = 1
+Particle 394: Position = 0.299985, Bin = 2, Rank = 1
+Particle 395: Position = 0.471405, Bin = 3, Rank = 1
+Particle 396: Position = 0.471405, Bin = 3, Rank = 1
+Particle 397: Position = 0.128565, Bin = 0, Rank = 1
+Particle 398: Position = 0.664252, Bin = 4, Rank = 1
+Particle 399: Position = 0.621397, Bin = 4, Rank = 1
+Particle 400: Position = 0.535687, Bin = 3, Rank = 1
+Particle 401: Position = 0.578542, Bin = 4, Rank = 1
+Particle 402: Position = 0.621397, Bin = 4, Rank = 1
+Particle 403: Position = 0.642824, Bin = 4, Rank = 1
+Particle 404: Position = 0.299985, Bin = 2, Rank = 1
+Particle 405: Position = 0.578542, Bin = 4, Rank = 1
+Particle 406: Position = 0.449977, Bin = 3, Rank = 1
+Particle 407: Position = 0.25713, Bin = 1, Rank = 1
+Particle 408: Position = 0.685679, Bin = 4, Rank = 1
+Particle 409: Position = 0.621397, Bin = 4, Rank = 1
+Particle 410: Position = 0.385695, Bin = 2, Rank = 1
+Particle 411: Position = 0.17142, Bin = 1, Rank = 1
+Particle 412: Position = 0.17142, Bin = 1, Rank = 1
+Particle 413: Position = 0.492832, Bin = 3, Rank = 1
+Particle 414: Position = 0.299985, Bin = 2, Rank = 1
+Particle 415: Position = 0.0214275, Bin = 0, Rank = 1
+Particle 416: Position = 0.299985, Bin = 2, Rank = 1
+Particle 417: Position = 0.364267, Bin = 2, Rank = 1
+Particle 418: Position = 0.299985, Bin = 2, Rank = 1
+Particle 419: Position = 0.128565, Bin = 0, Rank = 1
+Particle 420: Position = 0.128565, Bin = 0, Rank = 1
+Particle 421: Position = 0.471405, Bin = 3, Rank = 1
+Particle 422: Position = 0.17142, Bin = 1, Rank = 1
+Particle 423: Position = 0.535687, Bin = 3, Rank = 1
+Particle 424: Position = 0.34284, Bin = 2, Rank = 1
+Particle 425: Position = 0.192847, Bin = 1, Rank = 1
+Particle 426: Position = 0.128565, Bin = 0, Rank = 1
+Particle 427: Position = 0.535687, Bin = 3, Rank = 1
+Particle 428: Position = 0.149992, Bin = 1, Rank = 1
+Particle 429: Position = 0.621397, Bin = 4, Rank = 1
+Particle 430: Position = 0.0642824, Bin = 0, Rank = 1
+Particle 431: Position = 0.278557, Bin = 1, Rank = 1
+Particle 432: Position = 0.214275, Bin = 1, Rank = 1
+Particle 433: Position = 0.235702, Bin = 1, Rank = 1
+Particle 434: Position = 0.492832, Bin = 3, Rank = 1
+Particle 435: Position = 0.514259, Bin = 3, Rank = 1
+Particle 436: Position = 0.535687, Bin = 3, Rank = 1
+Particle 437: Position = 0.385695, Bin = 2, Rank = 1
+Particle 438: Position = 0.0214275, Bin = 0, Rank = 1
+Particle 439: Position = 0.664252, Bin = 4, Rank = 1
+Particle 440: Position = 0.449977, Bin = 3, Rank = 1
+Particle 441: Position = 0.42855, Bin = 3, Rank = 1
+Particle 442: Position = 0.214275, Bin = 1, Rank = 1
+Particle 443: Position = 0.214275, Bin = 1, Rank = 1
+Particle 444: Position = 0.42855, Bin = 3, Rank = 1
+Particle 445: Position = 0.107137, Bin = 0, Rank = 1
+Particle 446: Position = 0.0214275, Bin = 0, Rank = 1
+Particle 447: Position = 0.685679, Bin = 4, Rank = 1
+Particle 448: Position = 0.149992, Bin = 1, Rank = 1
+Particle 449: Position = 0.0857099, Bin = 0, Rank = 1
+Particle 450: Position = 0.364267, Bin = 2, Rank = 1
+Particle 451: Position = 0.514259, Bin = 3, Rank = 1
+Particle 452: Position = 0.621397, Bin = 4, Rank = 1
+Particle 453: Position = 0.449977, Bin = 3, Rank = 1
+Particle 454: Position = 0.664252, Bin = 4, Rank = 1
+Particle 455: Position = 0.0214275, Bin = 0, Rank = 1
+Particle 456: Position = 0.449977, Bin = 3, Rank = 1
+Particle 457: Position = 0.664252, Bin = 4, Rank = 1
+Particle 458: Position = 0.599969, Bin = 4, Rank = 1
+Particle 459: Position = 0.107137, Bin = 0, Rank = 1
+Particle 460: Position = 0.0214275, Bin = 0, Rank = 1
+Particle 461: Position = 0.149992, Bin = 1, Rank = 1
+Particle 462: Position = 0.107137, Bin = 0, Rank = 1
+Particle 463: Position = 0.042855, Bin = 0, Rank = 1
+Particle 464: Position = 0.128565, Bin = 0, Rank = 1
+Particle 465: Position = 0.0642824, Bin = 0, Rank = 1
+Particle 466: Position = 0.107137, Bin = 0, Rank = 1
+Particle 467: Position = 0.514259, Bin = 3, Rank = 1
+Particle 468: Position = 0.235702, Bin = 1, Rank = 1
+Particle 469: Position = 0.578542, Bin = 4, Rank = 1
+Particle 470: Position = 0.685679, Bin = 4, Rank = 1
+Particle 471: Position = 0.42855, Bin = 3, Rank = 1
+Particle 472: Position = 0.621397, Bin = 4, Rank = 1
+Particle 473: Position = 0.407122, Bin = 2, Rank = 1
+Particle 474: Position = 0.407122, Bin = 2, Rank = 1
+Particle 475: Position = 0.621397, Bin = 4, Rank = 1
+Particle 476: Position = 0.321412, Bin = 2, Rank = 1
+Particle 477: Position = 0.364267, Bin = 2, Rank = 1
+Particle 478: Position = 0.17142, Bin = 1, Rank = 1
+Particle 479: Position = 0.34284, Bin = 2, Rank = 1
+Particle 480: Position = 0.17142, Bin = 1, Rank = 1
+Particle 481: Position = 0.599969, Bin = 4, Rank = 1
+Particle 482: Position = 0.492832, Bin = 3, Rank = 1
+Particle 483: Position = 0.34284, Bin = 2, Rank = 1
+Particle 484: Position = 0.664252, Bin = 4, Rank = 1
+Particle 485: Position = 0.557114, Bin = 3, Rank = 1
+Particle 486: Position = 0.535687, Bin = 3, Rank = 1
+Particle 487: Position = 0.042855, Bin = 0, Rank = 1
+Particle 488: Position = 0.642824, Bin = 4, Rank = 1
+Particle 489: Position = 0.578542, Bin = 4, Rank = 1
+Particle 490: Position = 0.557114, Bin = 3, Rank = 1
+Particle 491: Position = 0.299985, Bin = 2, Rank = 1
+Particle 492: Position = 0.299985, Bin = 2, Rank = 1
+Particle 493: Position = 0.364267, Bin = 2, Rank = 1
+Particle 494: Position = 0.042855, Bin = 0, Rank = 1
+Particle 495: Position = 0.471405, Bin = 3, Rank = 1
+Particle 496: Position = 0.0214275, Bin = 0, Rank = 1
+Particle 497: Position = 0.042855, Bin = 0, Rank = 1
+Particle 498: Position = 0.149992, Bin = 1, Rank = 1
+Particle 499: Position = 0.299985, Bin = 2, Rank = 1
+Particle 500: Position = 0.664252, Bin = 4, Rank = 1
+Particle 501: Position = 0.407122, Bin = 2, Rank = 1
+Particle 502: Position = 0.299985, Bin = 2, Rank = 1
+Particle 503: Position = 0.0857099, Bin = 0, Rank = 1
+Particle 504: Position = 0.149992, Bin = 1, Rank = 1
+Particle 505: Position = 0.042855, Bin = 0, Rank = 1
+Particle 506: Position = 0.642824, Bin = 4, Rank = 1
+Particle 507: Position = 0.664252, Bin = 4, Rank = 1
+Particle 508: Position = 0.664252, Bin = 4, Rank = 1
+Particle 509: Position = 0.34284, Bin = 2, Rank = 1
+Particle 510: Position = 0.42855, Bin = 3, Rank = 1
+Particle 511: Position = 0.492832, Bin = 3, Rank = 1
+Particle 512: Position = 0.278557, Bin = 1, Rank = 1
+Particle 513: Position = 0.0857099, Bin = 0, Rank = 1
+Particle 514: Position = 0.235702, Bin = 1, Rank = 1
+Particle 515: Position = 0.664252, Bin = 4, Rank = 1
+Particle 516: Position = 0.557114, Bin = 3, Rank = 1
+Particle 517: Position = 0.0642824, Bin = 0, Rank = 1
+Particle 518: Position = 0.364267, Bin = 2, Rank = 1
+Particle 519: Position = 0.299985, Bin = 2, Rank = 1
+Particle 520: Position = 0.557114, Bin = 3, Rank = 1
+Particle 521: Position = 0.042855, Bin = 0, Rank = 1
+Particle 522: Position = 0.42855, Bin = 3, Rank = 1
+Particle 523: Position = 0.621397, Bin = 4, Rank = 1
+Particle 524: Position = 0.278557, Bin = 1, Rank = 1
+Particle 525: Position = 0.557114, Bin = 3, Rank = 1
+Particle 526: Position = 0.25713, Bin = 1, Rank = 1
+Particle 527: Position = 0.0214275, Bin = 0, Rank = 1
+Particle 528: Position = 0.107137, Bin = 0, Rank = 1
+Particle 529: Position = 0.578542, Bin = 4, Rank = 1
+Particle 530: Position = 0.25713, Bin = 1, Rank = 1
+Particle 531: Position = 0.514259, Bin = 3, Rank = 1
+Particle 532: Position = 0.385695, Bin = 2, Rank = 1
+Particle 533: Position = 0.492832, Bin = 3, Rank = 1
+Particle 534: Position = 0.685679, Bin = 4, Rank = 1
+Particle 535: Position = 0.0857099, Bin = 0, Rank = 1
+Particle 536: Position = 0.449977, Bin = 3, Rank = 1
+Particle 537: Position = 0.599969, Bin = 4, Rank = 1
+Particle 538: Position = 0.471405, Bin = 3, Rank = 1
+Particle 539: Position = 0.128565, Bin = 0, Rank = 1
+Particle 540: Position = 0.34284, Bin = 2, Rank = 1
+Particle 541: Position = 0.149992, Bin = 1, Rank = 1
+Particle 542: Position = 0.642824, Bin = 4, Rank = 1
+Particle 543: Position = 0.235702, Bin = 1, Rank = 1
+Particle 544: Position = 0.321412, Bin = 2, Rank = 1
+Particle 545: Position = 0.192847, Bin = 1, Rank = 1
+Particle 546: Position = 0.214275, Bin = 1, Rank = 1
+Particle 547: Position = 0.471405, Bin = 3, Rank = 1
+Particle 548: Position = 0.214275, Bin = 1, Rank = 1
+Particle 549: Position = 0.364267, Bin = 2, Rank = 1
+Particle 550: Position = 0.128565, Bin = 0, Rank = 1
+Particle 551: Position = 0.449977, Bin = 3, Rank = 1
+Particle 552: Position = 0.385695, Bin = 2, Rank = 1
+Particle 553: Position = 0.128565, Bin = 0, Rank = 1
+Particle 554: Position = 0.214275, Bin = 1, Rank = 1
+Particle 555: Position = 0.535687, Bin = 3, Rank = 1
+Particle 556: Position = 0.471405, Bin = 3, Rank = 1
+Particle 557: Position = 0.385695, Bin = 2, Rank = 1
+Particle 558: Position = 0.149992, Bin = 1, Rank = 1
+Particle 559: Position = 0.364267, Bin = 2, Rank = 1
+Particle 560: Position = 0.0642824, Bin = 0, Rank = 1
+Particle 561: Position = 0.25713, Bin = 1, Rank = 1
+Particle 562: Position = 0.25713, Bin = 1, Rank = 1
+Particle 563: Position = 0.214275, Bin = 1, Rank = 1
+Particle 564: Position = 0.578542, Bin = 4, Rank = 1
+Particle 565: Position = 0.492832, Bin = 3, Rank = 1
+Particle 566: Position = 0.364267, Bin = 2, Rank = 1
+Particle 567: Position = 0.25713, Bin = 1, Rank = 1
+Particle 568: Position = 0.407122, Bin = 2, Rank = 1
+Particle 569: Position = 0.0214275, Bin = 0, Rank = 1
+Particle 570: Position = 0.299985, Bin = 2, Rank = 1
+Particle 571: Position = 0.42855, Bin = 3, Rank = 1
+Particle 572: Position = 0.621397, Bin = 4, Rank = 1
+Particle 573: Position = 0.17142, Bin = 1, Rank = 1
+Particle 574: Position = 0.149992, Bin = 1, Rank = 1
+Particle 575: Position = 0.192847, Bin = 1, Rank = 1
+Particle 576: Position = 0.25713, Bin = 1, Rank = 1
+Particle 577: Position = 0.407122, Bin = 2, Rank = 1
+Particle 578: Position = 0.278557, Bin = 1, Rank = 1
+Particle 579: Position = 0.149992, Bin = 1, Rank = 1
+Particle 580: Position = 0.0214275, Bin = 0, Rank = 1
+Particle 581: Position = 0.364267, Bin = 2, Rank = 1
+Particle 582: Position = 0.364267, Bin = 2, Rank = 1
+Particle 583: Position = 0.17142, Bin = 1, Rank = 1
+Particle 584: Position = 0.0857099, Bin = 0, Rank = 1
+Particle 585: Position = 0.34284, Bin = 2, Rank = 1
+Particle 586: Position = 0.299985, Bin = 2, Rank = 1
+Particle 587: Position = 0.042855, Bin = 0, Rank = 1
+Particle 588: Position = 0.642824, Bin = 4, Rank = 1
+Particle 589: Position = 0.34284, Bin = 2, Rank = 1
+Particle 590: Position = 0.149992, Bin = 1, Rank = 1
+Particle 591: Position = 0.514259, Bin = 3, Rank = 1
+Particle 592: Position = 0.407122, Bin = 2, Rank = 1
+Particle 593: Position = 0.599969, Bin = 4, Rank = 1
+Particle 594: Position = 0.128565, Bin = 0, Rank = 1
+Particle 595: Position = 0.621397, Bin = 4, Rank = 1
+Particle 596: Position = 0.278557, Bin = 1, Rank = 1
+Particle 597: Position = 0.214275, Bin = 1, Rank = 1
+Particle 598: Position = 0.385695, Bin = 2, Rank = 1
+Particle 599: Position = 0.192847, Bin = 1, Rank = 1
+Particle 600: Position = 0.407122, Bin = 2, Rank = 1
+Particle 601: Position = 0.42855, Bin = 3, Rank = 1
+Particle 602: Position = 0.449977, Bin = 3, Rank = 1
+Particle 603: Position = 0.385695, Bin = 2, Rank = 1
+Particle 604: Position = 0.535687, Bin = 3, Rank = 1
+Particle 605: Position = 0.214275, Bin = 1, Rank = 1
+Particle 606: Position = 0.578542, Bin = 4, Rank = 1
+Particle 607: Position = 0.0214275, Bin = 0, Rank = 1
+Particle 608: Position = 0.407122, Bin = 2, Rank = 1
+Particle 609: Position = 0.34284, Bin = 2, Rank = 1
+Particle 610: Position = 0.278557, Bin = 1, Rank = 1
+Particle 611: Position = 0.364267, Bin = 2, Rank = 1
+Particle 612: Position = 0.128565, Bin = 0, Rank = 1
+Particle 613: Position = 0.0642824, Bin = 0, Rank = 1
+Particle 614: Position = 0.107137, Bin = 0, Rank = 1
+Particle 615: Position = 0.621397, Bin = 4, Rank = 1
+Particle 616: Position = 0.128565, Bin = 0, Rank = 1
+Particle 617: Position = 0.599969, Bin = 4, Rank = 1
+Particle 618: Position = 0.149992, Bin = 1, Rank = 1
+Particle 619: Position = 0.321412, Bin = 2, Rank = 1
+Particle 620: Position = 0.407122, Bin = 2, Rank = 1
+Particle 621: Position = 0.235702, Bin = 1, Rank = 1
+Particle 622: Position = 0.0857099, Bin = 0, Rank = 1
+Particle 623: Position = 0.128565, Bin = 0, Rank = 1
+Particle 624: Position = 0.642824, Bin = 4, Rank = 1
+Particle 625: Position = 0.042855, Bin = 0, Rank = 1
+Particle 626: Position = 0.214275, Bin = 1, Rank = 1
+Particle 627: Position = 0.25713, Bin = 1, Rank = 1
+Particle 628: Position = 0.107137, Bin = 0, Rank = 1
+Particle 629: Position = 0.471405, Bin = 3, Rank = 1
+Particle 630: Position = 0.192847, Bin = 1, Rank = 1
+Particle 631: Position = 0.17142, Bin = 1, Rank = 1
+Particle 632: Position = 0.364267, Bin = 2, Rank = 1
+Particle 633: Position = 0.278557, Bin = 1, Rank = 1
+Particle 634: Position = 0.17142, Bin = 1, Rank = 1
+Particle 635: Position = 0.149992, Bin = 1, Rank = 1
+Particle 636: Position = 0.557114, Bin = 3, Rank = 1
+Particle 637: Position = 0.449977, Bin = 3, Rank = 1
+Particle 638: Position = 0.492832, Bin = 3, Rank = 1
+Particle 639: Position = 0.128565, Bin = 0, Rank = 1
+Particle 640: Position = 0.25713, Bin = 1, Rank = 1
+Particle 641: Position = 0.299985, Bin = 2, Rank = 1
+Particle 642: Position = 0.235702, Bin = 1, Rank = 1
+Particle 643: Position = 0.599969, Bin = 4, Rank = 1
+Particle 644: Position = 0.42855, Bin = 3, Rank = 1
+Particle 645: Position = 0.214275, Bin = 1, Rank = 1
+Particle 646: Position = 0.449977, Bin = 3, Rank = 1
+Particle 647: Position = 0.321412, Bin = 2, Rank = 1
+Particle 648: Position = 0.42855, Bin = 3, Rank = 1
+Particle 649: Position = 0.278557, Bin = 1, Rank = 1
+Particle 650: Position = 0.364267, Bin = 2, Rank = 1
+Particle 651: Position = 0.192847, Bin = 1, Rank = 1
+Particle 652: Position = 0.0642824, Bin = 0, Rank = 1
+Particle 653: Position = 0.214275, Bin = 1, Rank = 1
+Particle 654: Position = 0.042855, Bin = 0, Rank = 1
+Particle 655: Position = 0.557114, Bin = 3, Rank = 1
+Particle 656: Position = 0.642824, Bin = 4, Rank = 1
+Particle 657: Position = 0.042855, Bin = 0, Rank = 1
+Particle 658: Position = 0.278557, Bin = 1, Rank = 1
+Particle 659: Position = 0.621397, Bin = 4, Rank = 1
+Particle 660: Position = 0.407122, Bin = 2, Rank = 1
+Particle 661: Position = 0.42855, Bin = 3, Rank = 1
+Particle 662: Position = 0.321412, Bin = 2, Rank = 1
+Particle 663: Position = 0.0642824, Bin = 0, Rank = 1
+Particle 664: Position = 0.0857099, Bin = 0, Rank = 1
+Particle 665: Position = 0.214275, Bin = 1, Rank = 1
+Particle 666: Position = 0.535687, Bin = 3, Rank = 1
+Particle 667: Position = 0.107137, Bin = 0, Rank = 1
+Particle 668: Position = 0.34284, Bin = 2, Rank = 1
+Particle 669: Position = 0.042855, Bin = 0, Rank = 1
+Particle 670: Position = 0.42855, Bin = 3, Rank = 1
+Particle 671: Position = 0.321412, Bin = 2, Rank = 1
+Particle 672: Position = 0.278557, Bin = 1, Rank = 1
+Particle 673: Position = 0.578542, Bin = 4, Rank = 1
+Particle 674: Position = 0.107137, Bin = 0, Rank = 1
+Particle 675: Position = 0.557114, Bin = 3, Rank = 1
+Particle 676: Position = 0.299985, Bin = 2, Rank = 1
+Particle 677: Position = 0.599969, Bin = 4, Rank = 1
+Particle 678: Position = 0.449977, Bin = 3, Rank = 1
+Particle 679: Position = 0.192847, Bin = 1, Rank = 1
+Particle 680: Position = 0.128565, Bin = 0, Rank = 1
+Particle 681: Position = 0.042855, Bin = 0, Rank = 1
+Particle 682: Position = 0.192847, Bin = 1, Rank = 1
+Particle 683: Position = 0.192847, Bin = 1, Rank = 1
+Particle 684: Position = 0.278557, Bin = 1, Rank = 1
+Particle 685: Position = 0.385695, Bin = 2, Rank = 1
+Particle 686: Position = 0.214275, Bin = 1, Rank = 1
+Particle 687: Position = 0.621397, Bin = 4, Rank = 1
+Particle 688: Position = 0.492832, Bin = 3, Rank = 1
+Particle 689: Position = 0.407122, Bin = 2, Rank = 1
+Particle 690: Position = 0.642824, Bin = 4, Rank = 1
+Particle 691: Position = 0.385695, Bin = 2, Rank = 1
+Particle 692: Position = 0.578542, Bin = 4, Rank = 1
+Particle 693: Position = 0.471405, Bin = 3, Rank = 1
+Particle 694: Position = 0.25713, Bin = 1, Rank = 1
+Particle 695: Position = 0.449977, Bin = 3, Rank = 1
+Particle 696: Position = 0.364267, Bin = 2, Rank = 1
+Particle 697: Position = 0.642824, Bin = 4, Rank = 1
+Particle 698: Position = 0.235702, Bin = 1, Rank = 1
+Particle 699: Position = 0.25713, Bin = 1, Rank = 1
+Particle 700: Position = 0.0642824, Bin = 0, Rank = 1
+Particle 701: Position = 0.557114, Bin = 3, Rank = 1
+Particle 702: Position = 0.685679, Bin = 4, Rank = 1
+Particle 703: Position = 0.25713, Bin = 1, Rank = 1
+Particle 704: Position = 0.492832, Bin = 3, Rank = 1
+Particle 705: Position = 0.0214275, Bin = 0, Rank = 1
+Particle 706: Position = 0.278557, Bin = 1, Rank = 1
+Particle 707: Position = 0.471405, Bin = 3, Rank = 1
+Particle 708: Position = 0.514259, Bin = 3, Rank = 1
+Particle 709: Position = 0.25713, Bin = 1, Rank = 1
+Particle 710: Position = 0.578542, Bin = 4, Rank = 1
+Particle 711: Position = 0.321412, Bin = 2, Rank = 1
+Particle 712: Position = 0.471405, Bin = 3, Rank = 1
+Particle 713: Position = 0.664252, Bin = 4, Rank = 1
+Particle 714: Position = 0.192847, Bin = 1, Rank = 1
+Particle 715: Position = 0.321412, Bin = 2, Rank = 1
+Particle 716: Position = 0.321412, Bin = 2, Rank = 1
+Particle 717: Position = 0.514259, Bin = 3, Rank = 1
+Particle 718: Position = 0.385695, Bin = 2, Rank = 1
+Particle 719: Position = 0.107137, Bin = 0, Rank = 1
+Particle 720: Position = 0.0642824, Bin = 0, Rank = 1
+Particle 721: Position = 0.385695, Bin = 2, Rank = 1
+Particle 722: Position = 0.0214275, Bin = 0, Rank = 1
+Particle 723: Position = 0.642824, Bin = 4, Rank = 1
+Particle 724: Position = 0.0642824, Bin = 0, Rank = 1
+Particle 725: Position = 0.685679, Bin = 4, Rank = 1
+Particle 726: Position = 0.42855, Bin = 3, Rank = 1
+Particle 727: Position = 0.321412, Bin = 2, Rank = 1
+Particle 728: Position = 0.0642824, Bin = 0, Rank = 1
+Particle 729: Position = 0.407122, Bin = 2, Rank = 1
+Particle 730: Position = 0.128565, Bin = 0, Rank = 1
+Particle 731: Position = 0.0642824, Bin = 0, Rank = 1
+Particle 732: Position = 0.621397, Bin = 4, Rank = 1
+Particle 733: Position = 0.214275, Bin = 1, Rank = 1
+Particle 734: Position = 0.557114, Bin = 3, Rank = 1
+Particle 735: Position = 0.664252, Bin = 4, Rank = 1
+Particle 736: Position = 0.17142, Bin = 1, Rank = 1
+Particle 737: Position = 0.642824, Bin = 4, Rank = 1
+Particle 738: Position = 0.107137, Bin = 0, Rank = 1
+Particle 739: Position = 0.578542, Bin = 4, Rank = 1
+Particle 740: Position = 0.621397, Bin = 4, Rank = 1
+Particle 741: Position = 0.664252, Bin = 4, Rank = 1
+Particle 742: Position = 0.0857099, Bin = 0, Rank = 1
+Particle 743: Position = 0.514259, Bin = 3, Rank = 1
+Particle 744: Position = 0.0214275, Bin = 0, Rank = 1
+Particle 745: Position = 0.385695, Bin = 2, Rank = 1
+Particle 746: Position = 0.621397, Bin = 4, Rank = 1
+Particle 747: Position = 0.621397, Bin = 4, Rank = 1
+Particle 748: Position = 0.192847, Bin = 1, Rank = 1
+Particle 749: Position = 0.235702, Bin = 1, Rank = 1
+Particle 750: Position = 0.17142, Bin = 1, Rank = 1
+Particle 751: Position = 0.364267, Bin = 2, Rank = 1
+Particle 752: Position = 0.25713, Bin = 1, Rank = 1
+Particle 753: Position = 0.642824, Bin = 4, Rank = 1
+Particle 754: Position = 0.449977, Bin = 3, Rank = 1
+Particle 755: Position = 0.42855, Bin = 3, Rank = 1
+Particle 756: Position = 0.599969, Bin = 4, Rank = 1
+Particle 757: Position = 0.492832, Bin = 3, Rank = 1
+Particle 758: Position = 0.364267, Bin = 2, Rank = 1
+Particle 759: Position = 0.192847, Bin = 1, Rank = 1
+Particle 760: Position = 0.599969, Bin = 4, Rank = 1
+Particle 761: Position = 0.514259, Bin = 3, Rank = 1
+Particle 762: Position = 0.128565, Bin = 0, Rank = 1
+Particle 763: Position = 0.0642824, Bin = 0, Rank = 1
+Particle 764: Position = 0.17142, Bin = 1, Rank = 1
+Particle 765: Position = 0.278557, Bin = 1, Rank = 1
+Particle 766: Position = 0.557114, Bin = 3, Rank = 1
+Particle 767: Position = 0.621397, Bin = 4, Rank = 1
+Particle 768: Position = 0.535687, Bin = 3, Rank = 1
+Particle 769: Position = 0.514259, Bin = 3, Rank = 1
+Particle 770: Position = 0.578542, Bin = 4, Rank = 1
+Particle 771: Position = 0.42855, Bin = 3, Rank = 1
+Particle 772: Position = 0.42855, Bin = 3, Rank = 1
+Particle 773: Position = 0.235702, Bin = 1, Rank = 1
+Particle 774: Position = 0.17142, Bin = 1, Rank = 1
+Particle 775: Position = 0.214275, Bin = 1, Rank = 1
+Particle 776: Position = 0.385695, Bin = 2, Rank = 1
+Particle 777: Position = 0.557114, Bin = 3, Rank = 1
+Particle 778: Position = 0.107137, Bin = 0, Rank = 1
+Particle 779: Position = 0.578542, Bin = 4, Rank = 1
+Particle 780: Position = 0.214275, Bin = 1, Rank = 1
+Particle 781: Position = 0.0857099, Bin = 0, Rank = 1
+Particle 782: Position = 0.0214275, Bin = 0, Rank = 1
+Particle 783: Position = 0.128565, Bin = 0, Rank = 1
+Particle 784: Position = 0.299985, Bin = 2, Rank = 1
+Particle 785: Position = 0.299985, Bin = 2, Rank = 1
+Particle 786: Position = 0.385695, Bin = 2, Rank = 1
+Particle 787: Position = 0.664252, Bin = 4, Rank = 1
+Particle 788: Position = 0.34284, Bin = 2, Rank = 1
+Particle 789: Position = 0.321412, Bin = 2, Rank = 1
+Particle 790: Position = 0.407122, Bin = 2, Rank = 1
+Particle 791: Position = 0.299985, Bin = 2, Rank = 1
+Particle 792: Position = 0.385695, Bin = 2, Rank = 1
+Particle 793: Position = 0.514259, Bin = 3, Rank = 1
+Particle 794: Position = 0.0214275, Bin = 0, Rank = 1
+Particle 795: Position = 0.25713, Bin = 1, Rank = 1
+Particle 796: Position = 0.321412, Bin = 2, Rank = 1
+Particle 797: Position = 0.492832, Bin = 3, Rank = 1
+Particle 798: Position = 0.471405, Bin = 3, Rank = 1
+Particle 799: Position = 0.407122, Bin = 2, Rank = 1
+Particle 800: Position = 0.471405, Bin = 3, Rank = 1
+Particle 801: Position = 0.0642824, Bin = 0, Rank = 1
+Particle 802: Position = 0.0857099, Bin = 0, Rank = 1
+Particle 803: Position = 0.449977, Bin = 3, Rank = 1
+Particle 804: Position = 0.642824, Bin = 4, Rank = 1
+Particle 805: Position = 0.321412, Bin = 2, Rank = 1
+Particle 806: Position = 0.149992, Bin = 1, Rank = 1
+Particle 807: Position = 0.514259, Bin = 3, Rank = 1
+Particle 808: Position = 0.0214275, Bin = 0, Rank = 1
+Particle 809: Position = 0.642824, Bin = 4, Rank = 1
+Particle 810: Position = 0.471405, Bin = 3, Rank = 1
+Particle 811: Position = 0.364267, Bin = 2, Rank = 1
+Particle 812: Position = 0.128565, Bin = 0, Rank = 1
+Particle 813: Position = 0.449977, Bin = 3, Rank = 1
+Particle 814: Position = 0.299985, Bin = 2, Rank = 1
+Particle 815: Position = 0.449977, Bin = 3, Rank = 1
+Particle 816: Position = 0.17142, Bin = 1, Rank = 1
+Particle 817: Position = 0.492832, Bin = 3, Rank = 1
+Particle 818: Position = 0.578542, Bin = 4, Rank = 1
+Particle 819: Position = 0.299985, Bin = 2, Rank = 1
+Particle 820: Position = 0.235702, Bin = 1, Rank = 1
+Particle 821: Position = 0.42855, Bin = 3, Rank = 1
+Particle 822: Position = 0.192847, Bin = 1, Rank = 1
+Particle 823: Position = 0.642824, Bin = 4, Rank = 1
+Particle 824: Position = 0.557114, Bin = 3, Rank = 1
+Particle 825: Position = 0.557114, Bin = 3, Rank = 1
+Particle 826: Position = 0.278557, Bin = 1, Rank = 1
+Particle 827: Position = 0.535687, Bin = 3, Rank = 1
+Particle 828: Position = 0.364267, Bin = 2, Rank = 1
+Particle 829: Position = 0.471405, Bin = 3, Rank = 1
+Particle 830: Position = 0.17142, Bin = 1, Rank = 1
+Particle 831: Position = 0.578542, Bin = 4, Rank = 1
+Particle 832: Position = 0.192847, Bin = 1, Rank = 1
+Particle 833: Position = 0.235702, Bin = 1, Rank = 1
+Particle 834: Position = 0.385695, Bin = 2, Rank = 1
+Particle 835: Position = 0.471405, Bin = 3, Rank = 1
+Particle 836: Position = 0.492832, Bin = 3, Rank = 1
+Particle 837: Position = 0.42855, Bin = 3, Rank = 1
+Particle 838: Position = 0.214275, Bin = 1, Rank = 1
+Particle 839: Position = 0.321412, Bin = 2, Rank = 1
+Particle 840: Position = 0.578542, Bin = 4, Rank = 1
+Particle 841: Position = 0.449977, Bin = 3, Rank = 1
+Particle 842: Position = 0.42855, Bin = 3, Rank = 1
+Particle 843: Position = 0.599969, Bin = 4, Rank = 1
+Particle 844: Position = 0.0857099, Bin = 0, Rank = 1
+Particle 845: Position = 0.25713, Bin = 1, Rank = 1
+Particle 846: Position = 0.107137, Bin = 0, Rank = 1
+Particle 847: Position = 0.299985, Bin = 2, Rank = 1
+Particle 848: Position = 0.535687, Bin = 3, Rank = 1
+Particle 849: Position = 0.107137, Bin = 0, Rank = 1
+Particle 850: Position = 0.042855, Bin = 0, Rank = 1
+Particle 851: Position = 0.514259, Bin = 3, Rank = 1
+Particle 852: Position = 0.0214275, Bin = 0, Rank = 1
+Particle 853: Position = 0.664252, Bin = 4, Rank = 1
+Particle 854: Position = 0.25713, Bin = 1, Rank = 1
+Particle 855: Position = 0.17142, Bin = 1, Rank = 1
+Particle 856: Position = 0.0857099, Bin = 0, Rank = 1
+Particle 857: Position = 0.128565, Bin = 0, Rank = 1
+Particle 858: Position = 0.0214275, Bin = 0, Rank = 1
+Particle 859: Position = 0.17142, Bin = 1, Rank = 1
+Particle 860: Position = 0.107137, Bin = 0, Rank = 1
+Particle 861: Position = 0.492832, Bin = 3, Rank = 1
+Particle 862: Position = 0.642824, Bin = 4, Rank = 1
+Particle 863: Position = 0.578542, Bin = 4, Rank = 1
+Particle 864: Position = 0.364267, Bin = 2, Rank = 1
+Particle 865: Position = 0.535687, Bin = 3, Rank = 1
+Rank: 4
+Init size: 147
+Particle count for rank 4: 147
+Rank: 0
+total_y: 0
+total_ybin: 0
+Init size: 192
+Particle count for rank 0: 192
+Start simulate_one_step. 
+Particle 866: Position = 0.599969, Bin = 4, Rank = 1
+Particle 867: Position = 0.642824, Bin = 4, Rank = 1
+Particle 868: Position = 0.0642824, Bin = 0, Rank = 1
+Particle 869: Position = 0.235702, Bin = 1, Rank = 1
+Particle 870: Position = 0.149992, Bin = 1, Rank = 1
+Particle 871: Position = 0.128565, Bin = 0, Rank = 1
+Particle 872: Position = 0.235702, Bin = 1, Rank = 1
+Particle 873: Position = 0.664252, Bin = 4, Rank = 1
+Particle 874: Position = 0.664252, Bin = 4, Rank = 1
+Particle 875: Position = 0, Bin = 0, Rank = 1
+Particle 876: Position = 0, Bin = 0, Rank = 1
+Particle 877: Position = 0, Bin = 0, Rank = 1
+Particle 878: Position = 0, Bin = 0, Rank = 1
+Particle 879: Position = 0, Bin = 0, Rank = 1
+Particle 880: Position = 0, Bin = 0, Rank = 1
+Particle 881: Position = 0, Bin = 0, Rank = 1
+Particle 882: Position = 0, Bin = 0, Rank = 1
+Particle 883: Position = 0, Bin = 0, Rank = 1
+Particle 884: Position = 0, Bin = 0, Rank = 1
+Particle 885: Position = 0, Bin = 0, Rank = 1
+Particle 886: Position = 0, Bin = 0, Rank = 1
+Particle 887: Position = 0, Bin = 0, Rank = 1
+Particle 888: Position = 0, Bin = 0, Rank = 1
+Particle 889: Position = 0, Bin = 0, Rank = 1
+Particle 890: Position = 0, Bin = 0, Rank = 1
+Particle 891: Position = 0, Bin = 0, Rank = 1
+Particle 892: Position = 0, Bin = 0, Rank = 1
+Particle 893: Position = 0, Bin = 0, Rank = 1
+Particle 894: Position = 0, Bin = 0, Rank = 1
+Particle 895: Position = 0, Bin = 0, Rank = 1
+Apply force rank: 4
+Move particle rank: 4
+Particle 896: Position = 0, Bin = 0, Rank = 1
+Particle 897: Position = 0, Bin = 0, Rank = 1
+Particle 898: Position = 0, Bin = 0, Rank = 1
+Particle 899: Position = 0, Bin = 0, Rank = 1
+Particle 900: Position = 0, Bin = 0, Rank = 1
+Particle 901: Position = 0, Bin = 0, Rank = 1
+Particle 902: Position = 0, Bin = 0, Rank = 1
+Particle 903: Position = 0, Bin = 0, Rank = 1
+Particle 904: Position = 0, Bin = 0, Rank = 1
+Particle 905: Position = 0, Bin = 0, Rank = 1
+Particle 906: Position = 0, Bin = 0, Rank = 1
+Particle 907: Position = 0, Bin = 0, Rank = 1
+Particle 908: Position = 0, Bin = 0, Rank = 1
+Particle 909: Position = 0, Bin = 0, Rank = 1
+Particle 910: Position = 0, Bin = 0, Rank = 1
+Particle 911: Position = 0, Bin = 0, Rank = 1
+Particle 912: Position = 0, Bin = 0, Rank = 1
+Particle 913: Position = 0, Bin = 0, Rank = 1
+Particle 914: Position = 0, Bin = 0, Rank = 1
+Particle 915: Position = 0, Bin = 0, Rank = 1
+Particle 916: Position = 0, Bin = 0, Rank = 1
+Particle 917: Position = 0, Bin = 0, Rank = 1
+Particle 918: Position = 0, Bin = 0, Rank = 1
+Particle 919: Position = 0, Bin = 0, Rank = 1
+Apply force rank: 0
+Move particle rank: 0
+Particle 920: Position = 0, Bin = 0, Rank = 1
+Particle 921: Position = 0, Bin = 0, Rank = 1
+Particle 922: Position = 0, Bin = 0, Rank = 1
+Particle 923: Position = 0, Bin = 0, Rank = 1
+Particle 924: Position = 0, Bin = 0, Rank = 1
+Particle 925: Position = 0, Bin = 0, Rank = 1
+Particle 926: Position = 0, Bin = 0, Rank = 1
+Particle 927: Position = 0, Bin = 0, Rank = 1
+Particle 928: Position = 0, Bin = 0, Rank = 1
+Particle 929: Position = 0, Bin = 0, Rank = 1
+Particle 930: Position = 0, Bin = 0, Rank = 1
+Particle 931: Position = 0, Bin = 0, Rank = 1
+Particle 932: Position = 0, Bin = 0, Rank = 1
+Particle 933: Position = 0, Bin = 0, Rank = 1
+Particle 934: Position = 0, Bin = 0, Rank = 1
+Particle 935: Position = 0, Bin = 0, Rank = 1
+Particle 936: Position = 0, Bin = 0, Rank = 1
+Particle 937: Position = 0, Bin = 0, Rank = 1
+Particle 938: Position = 0, Bin = 0, Rank = 1
+Particle 939: Position = 0, Bin = 0, Rank = 1
+Particle 940: Position = 0, Bin = 0, Rank = 1
+Particle 941: Position = 0, Bin = 0, Rank = 1
+Particle 942: Position = 0, Bin = 0, Rank = 1
+Particle 943: Position = 0, Bin = 0, Rank = 1
+Particle 944: Position = 0, Bin = 0, Rank = 1
+Particle 945: Position = 0, Bin = 0, Rank = 1
+Particle 946: Position = 0, Bin = 0, Rank = 1
+Particle 947: Position = 0, Bin = 0, Rank = 1
+Particle 948: Position = 0, Bin = 0, Rank = 1
+Particle 949: Position = 0, Bin = 0, Rank = 1
+Particle 950: Position = 0, Bin = 0, Rank = 1
+Particle 951: Position = 0, Bin = 0, Rank = 1
+Particle 952: Position = 0, Bin = 0, Rank = 1
+Particle 953: Position = 0, Bin = 0, Rank = 1
+Particle 954: Position = 0, Bin = 0, Rank = 1
+Particle 955: Position = 0, Bin = 0, Rank = 1
+Particle 956: Position = 0, Bin = 0, Rank = 1
+Particle 957: Position = 0, Bin = 0, Rank = 1
+Particle 958: Position = 0, Bin = 0, Rank = 1
+Particle 959: Position = 0, Bin = 0, Rank = 1
+Particle 960: Position = 0, Bin = 0, Rank = 1
+Particle 961: Position = 0, Bin = 0, Rank = 1
+Particle 962: Position = 0, Bin = 0, Rank = 1
+Particle 963: Position = 0, Bin = 0, Rank = 1
+Particle 964: Position = 0, Bin = 0, Rank = 1
+Particle 965: Position = 0, Bin = 0, Rank = 1
+Particle 966: Position = 0, Bin = 0, Rank = 1
+Particle 967: Position = 0, Bin = 0, Rank = 1
+Particle 968: Position = 0, Bin = 0, Rank = 1
+Particle 969: Position = 0, Bin = 0, Rank = 1
+Particle 970: Position = 0, Bin = 0, Rank = 1
+Particle 971: Position = 0, Bin = 0, Rank = 1
+Particle 972: Position = 0, Bin = 0, Rank = 1
+Particle 973: Position = 0, Bin = 0, Rank = 1
+Particle 974: Position = 0, Bin = 0, Rank = 1
+Particle 975: Position = 0, Bin = 0, Rank = 1
+Particle 976: Position = 0, Bin = 0, Rank = 1
+Particle 977: Position = 0, Bin = 0, Rank = 1
+Particle 978: Position = 0, Bin = 0, Rank = 1
+Particle 979: Position = 0, Bin = 0, Rank = 1
+Particle 980: Position = 0, Bin = 0, Rank = 1
+Particle 981: Position = 0, Bin = 0, Rank = 1
+Particle 982: Position = 0, Bin = 0, Rank = 1
+Particle 983: Position = 0, Bin = 0, Rank = 1
+Particle 984: Position = 0, Bin = 0, Rank = 1
+Particle 985: Position = 0, Bin = 0, Rank = 1
+Particle 986: Position = 0, Bin = 0, Rank = 1
+Particle 987: Position = 0, Bin = 0, Rank = 1
+Particle 988: Position = 0, Bin = 0, Rank = 1
+Particle 989: Position = 0, Bin = 0, Rank = 1
+Particle 990: Position = 0, Bin = 0, Rank = 1
+Particle 991: Position = 0, Bin = 0, Rank = 1
+Particle 992: Position = 0, Bin = 0, Rank = 1
+Particle 993: Position = 0, Bin = 0, Rank = 1
+Particle 994: Position = 0, Bin = 0, Rank = 1
+Particle 995: Position = 0, Bin = 0, Rank = 1
+Particle 996: Position = 0, Bin = 0, Rank = 1
+Particle 997: Position = 0, Bin = 0, Rank = 1
+Particle 998: Position = 0, Bin = 0, Rank = 1
+Particle 999: Position = 0, Bin = 0, Rank = 1
+Rank: 1
+Init size: 200
+Particle count for rank 1: 200
+Apply force rank: 1
+Move particle rank: 1
+Send and get rank: 0
+find ghost rank: 0
+Send and get rank: 1
+find ghost rank: 1
+Send and get rank: 2
+find ghost rank: 2
+Send and get rank: 3
+find ghost rank: 3
+Send and get rank: 4
+find ghost rank: 4
+Ghost parts rank: 2
+Ghost parts rank: 3
+Ghost parts rank: 4
+Ghost parts rank: 0
+End simulate_one_step. 
+Ghost parts rank: 1
+rank: 1
+gather size: 200
+rank: 2
+gather size: 161
+rank: 3
+gather size: 197
+rank: 0
+gather size: 192
+rbuf size: 897
+rank: 4
+gather size: 147
+Could gatherv: 0.557002
+i: 0
+rbuf: 5
+parts: 5
+i: 1
+rbuf: 13
+parts: 13
+i: 2
+rbuf: 16
+parts: 16
+i: 3
+rbuf: 19
+parts: 19
+i: 4
+rbuf: 20
+parts: 20
+i: 5
+rbuf: 21
+parts: 21
+i: 6
+rbuf: 32
+parts: 32
+i: 7
+rbuf: 39
+parts: 39
+i: 8
+rbuf: 41
+parts: 41
+i: 9
+rbuf: 49
+parts: 49
+i: 10
+rbuf: 51
+parts: 51
+i: 11
+rbuf: 54
+parts: 54
+i: 12
+rbuf: 61
+parts: 61
+i: 13
+rbuf: 62
+parts: 62
+i: 14
+rbuf: 74
+parts: 74
+i: 15
+rbuf: 75
+parts: 75
+i: 16
+rbuf: 76
+parts: 76
+i: 17
+rbuf: 81
+parts: 81
+i: 18
+rbuf: 95
+parts: 95
+i: 19
+rbuf: 97
+parts: 97
+i: 20
+rbuf: 103
+parts: 103
+i: 21
+rbuf: 104
+parts: 104
+i: 22
+rbuf: 105
+parts: 105
+i: 23
+rbuf: 111
+parts: 111
+i: 24
+rbuf: 112
+parts: 112
+i: 25
+rbuf: 116
+parts: 116
+i: 26
+rbuf: 122
+parts: 122
+i: 27
+rbuf: 125
+parts: 125
+i: 28
+rbuf: 136
+parts: 136
+i: 29
+rbuf: 138
+parts: 138
+i: 30
+rbuf: 142
+parts: 142
+i: 31
+rbuf: 143
+parts: 143
+i: 32
+rbuf: 147
+parts: 147
+i: 33
+rbuf: 148
+parts: 148
+i: 34
+rbuf: 149
+parts: 149
+i: 35
+rbuf: 163
+parts: 163
+i: 36
+rbuf: 165
+parts: 165
+i: 37
+rbuf: 166
+parts: 166
+i: 38
+rbuf: 170
+parts: 170
+i: 39
+rbuf: 182
+parts: 182
+i: 40
+rbuf: 185
+parts: 185
+i: 41
+rbuf: 186
+parts: 186
+i: 42
+rbuf: 190
+parts: 190
+i: 43
+rbuf: 196
+parts: 196
+i: 44
+rbuf: 199
+parts: 199
+i: 45
+rbuf: 212
+parts: 212
+i: 46
+rbuf: 214
+parts: 214
+i: 47
+rbuf: 218
+parts: 218
+i: 48
+rbuf: 220
+parts: 220
+i: 49
+rbuf: 221
+parts: 221
+i: 50
+rbuf: 226
+parts: 226
+i: 51
+rbuf: 240
+parts: 240
+i: 52
+rbuf: 247
+parts: 247
+i: 53
+rbuf: 249
+parts: 249
+i: 54
+rbuf: 257
+parts: 257
+i: 55
+rbuf: 261
+parts: 261
+i: 56
+rbuf: 263
+parts: 263
+i: 57
+rbuf: 264
+parts: 264
+i: 58
+rbuf: 269
+parts: 269
+i: 59
+rbuf: 273
+parts: 273
+i: 60
+rbuf: 281
+parts: 281
+i: 61
+rbuf: 283
+parts: 283
+i: 62
+rbuf: 285
+parts: 285
+i: 63
+rbuf: 290
+parts: 290
+i: 64
+rbuf: 296
+parts: 296
+i: 65
+rbuf: 300
+parts: 300
+i: 66
+rbuf: 301
+parts: 301
+i: 67
+rbuf: 309
+parts: 309
+i: 68
+rbuf: 316
+parts: 316
+i: 69
+rbuf: 334
+parts: 334
+i: 70
+rbuf: 335
+parts: 335
+i: 71
+rbuf: 336
+parts: 336
+i: 72
+rbuf: 343
+parts: 343
+i: 73
+rbuf: 351
+parts: 351
+i: 74
+rbuf: 352
+parts: 352
+i: 75
+rbuf: 367
+parts: 367
+i: 76
+rbuf: 385
+parts: 385
+i: 77
+rbuf: 398
+parts: 398
+i: 78
+rbuf: 416
+parts: 416
+i: 79
+rbuf: 420
+parts: 420
+i: 80
+rbuf: 421
+parts: 421
+i: 81
+rbuf: 427
+parts: 427
+i: 82
+rbuf: 431
+parts: 431
+i: 83
+rbuf: 439
+parts: 439
+i: 84
+rbuf: 446
+parts: 446
+i: 85
+rbuf: 447
+parts: 447
+i: 86
+rbuf: 450
+parts: 450
+i: 87
+rbuf: 456
+parts: 456
+i: 88
+rbuf: 460
+parts: 460
+i: 89
+rbuf: 461
+parts: 461
+i: 90
+rbuf: 463
+parts: 463
+i: 91
+rbuf: 464
+parts: 464
+i: 92
+rbuf: 465
+parts: 465
+i: 93
+rbuf: 466
+parts: 466
+i: 94
+rbuf: 467
+parts: 467
+i: 95
+rbuf: 488
+parts: 488
+i: 96
+rbuf: 495
+parts: 495
+i: 97
+rbuf: 497
+parts: 497
+i: 98
+rbuf: 498
+parts: 498
+i: 99
+rbuf: 504
+parts: 504
+i: 100
+rbuf: 506
+parts: 506
+i: 101
+rbuf: 514
+parts: 514
+i: 102
+rbuf: 518
+parts: 518
+i: 103
+rbuf: 522
+parts: 522
+i: 104
+rbuf: 528
+parts: 528
+i: 105
+rbuf: 529
+parts: 529
+i: 106
+rbuf: 536
+parts: 536
+i: 107
+rbuf: 540
+parts: 540
+i: 108
+rbuf: 551
+parts: 551
+i: 109
+rbuf: 554
+parts: 554
+i: 110
+rbuf: 561
+parts: 561
+i: 111
+rbuf: 570
+parts: 570
+i: 112
+rbuf: 581
+parts: 581
+i: 113
+rbuf: 585
+parts: 585
+i: 114
+rbuf: 588
+parts: 588
+i: 115
+rbuf: 595
+parts: 595
+i: 116
+rbuf: 608
+parts: 608
+i: 117
+rbuf: 613
+parts: 613
+i: 118
+rbuf: 614
+parts: 614
+i: 119
+rbuf: 615
+parts: 615
+i: 120
+rbuf: 617
+parts: 617
+i: 121
+rbuf: 623
+parts: 623
+i: 122
+rbuf: 624
+parts: 624
+i: 123
+rbuf: 626
+parts: 626
+i: 124
+rbuf: 629
+parts: 629
+i: 125
+rbuf: 640
+parts: 640
+i: 126
+rbuf: 653
+parts: 653
+i: 127
+rbuf: 655
+parts: 655
+i: 128
+rbuf: 658
+parts: 658
+i: 129
+rbuf: 664
+parts: 664
+i: 130
+rbuf: 665
+parts: 665
+i: 131
+rbuf: 668
+parts: 668
+i: 132
+rbuf: 670
+parts: 670
+i: 133
+rbuf: 675
+parts: 675
+i: 134
+rbuf: 681
+parts: 681
+i: 135
+rbuf: 682
+parts: 682
+i: 136
+rbuf: 701
+parts: 701
+i: 137
+rbuf: 706
+parts: 706
+i: 138
+rbuf: 720
+srun: error: nid005322: tasks 0-1,3-4: Segmentation fault
+parts: 720
+srun: Terminating StepId=22560830.0
+i: 139
+rbuf: 721
+parts: 721
+i: 140
+rbuf: 723
+parts: 723
+i: 141
+rbuf: 725
+parts: 725
+i: 142
+rbuf: 729
+parts: 729
+i: 143
+rbuf: 731
+parts: 731
+i: 144
+rbuf: 732
+parts: 732
+i: 145
+rbuf: 739
+parts: 739
+i: 146
+rbuf: 743
+parts: 743
+i: 147
+rbuf: 745
+parts: 745
+i: 148
+rbuf: 763
+parts: 763
+i: 149
+rbuf: 764
+parts: 764
+i: 150
+rbuf: 779
+parts: 779
+i: 151
+rbuf: 782
+parts: 782
+i: 152
+rbuf: 783
+parts: 783
+i: 153
+rbuf: 784
+parts: 784
+i: 154
+rbuf: 795
+parts: 795
+i: 155
+rbuf: 802
+parts: 802
+i: 156
+rbuf: 803
+parts: 803
+i: 157
+rbuf: 809
+parts: 809
+i: 158
+rbuf: 813
+parts: 813
+i: 159
+rbuf: 845
+parts: 845
+i: 160
+srun: error: nid005322: task 2: Segmentation fault
+rbuf: 847
+parts: 847
+i: 161
+rbuf: 850
+parts: 850
+i: 162
+rbuf: 851
+parts: 851
+i: 163
+rbuf: 853
+parts: 853
+i: 164
+rbuf: 857
+parts: 857
+i: 165
+rbuf: 858
+parts: 858
+i: 166
+rbuf: 859
+parts: 859
+i: 167
+rbuf: 861
+parts: 861
+i: 168
+rbuf: 3
+parts: 3
+i: 169
+rbuf: 4
+parts: 4
+i: 170
+rbuf: 8
+parts: 8
+i: 171
+rbuf: 9
+parts: 9
+i: 172
+rbuf: 10
+parts: 10
+i: 173
+rbuf: 24
+parts: 24
+i: 174
+rbuf: 26
+parts: 26
+i: 175
+rbuf: 29
+parts: 29
+i: 176
+rbuf: 30
+parts: 30
+i: 177
+rbuf: 33
+parts: 33
+i: 178
+rbuf: 40
+parts: 40
+i: 179
+rbuf: 43
+parts: 43
+i: 180
+rbuf: 50
+parts: 50
+i: 181
+rbuf: 52
+parts: 52
+i: 182
+rbuf: 56
+parts: 56
+i: 183
+rbuf: 57
+parts: 57
+i: 184
+rbuf: 64
+parts: 64
+i: 185
+rbuf: 66
+parts: 66
+i: 186
+rbuf: 72
+parts: 72
+i: 187
+rbuf: 83
+parts: 83
+i: 188
+rbuf: 84
+parts: 84
+i: 189
+rbuf: 87
+parts: 87
+i: 190
+rbuf: 91
+parts: 91
+i: 191
+rbuf: 94
+parts: 94
+i: 192
+rbuf: 102
+parts: 102
+i: 193
+rbuf: 106
+parts: 106
+i: 194
+rbuf: 108
+parts: 108
+i: 195
+rbuf: 114
+parts: 114
+i: 196
+rbuf: 119
+parts: 119
+i: 197
+rbuf: 128
+parts: 128
+i: 198
+rbuf: 132
+parts: 132
+i: 199
+rbuf: 134
+parts: 134
+i: 200
+rbuf: 137
+parts: 137
+i: 201
+rbuf: 141
+parts: 141
+i: 202
+rbuf: 157
+parts: 157
+i: 203
+rbuf: 160
+parts: 160
+i: 204
+rbuf: 169
+parts: 169
+i: 205
+rbuf: 172
+parts: 172
+i: 206
+rbuf: 173
+parts: 173
+i: 207
+rbuf: 178
+parts: 178
+i: 208
+rbuf: 180
+parts: 180
+i: 209
+rbuf: 181
+parts: 181
+i: 210
+rbuf: 183
+parts: 183
+i: 211
+rbuf: 197
+parts: 197
+i: 212
+rbuf: 205
+parts: 205
+i: 213
+rbuf: 207
+parts: 207
+i: 214
+rbuf: 209
+parts: 209
+i: 215
+rbuf: 210
+parts: 210
+i: 216
+rbuf: 211
+parts: 211
+i: 217
+rbuf: 213
+parts: 213
+i: 218
+rbuf: 217
+parts: 217
+i: 219
+rbuf: 225
+parts: 225
+i: 220
+rbuf: 236
+parts: 236
+i: 221
+rbuf: 241
+parts: 241
+i: 222
+rbuf: 243
+parts: 243
+i: 223
+rbuf: 256
+parts: 256
+i: 224
+rbuf: 262
+parts: 262
+i: 225
+rbuf: 265
+parts: 265
+i: 226
+rbuf: 267
+parts: 267
+i: 227
+rbuf: 272
+parts: 272
+i: 228
+rbuf: 274
+parts: 274
+i: 229
+rbuf: 279
+parts: 279
+i: 230
+rbuf: 284
+parts: 284
+i: 231
+rbuf: 289
+parts: 289
+i: 232
+rbuf: 291
+parts: 291
+i: 233
+rbuf: 306
+parts: 306
+i: 234
+rbuf: 311
+parts: 311
+i: 235
+rbuf: 313
+parts: 313
+i: 236
+rbuf: 318
+parts: 318
+i: 237
+rbuf: 321
+parts: 321
+i: 238
+rbuf: 325
+parts: 325
+i: 239
+rbuf: 329
+parts: 329
+i: 240
+rbuf: 332
+parts: 332
+i: 241
+rbuf: 341
+parts: 341
+i: 242
+rbuf: 342
+parts: 342
+i: 243
+rbuf: 346
+parts: 346
+i: 244
+rbuf: 348
+parts: 348
+i: 245
+rbuf: 353
+parts: 353
+i: 246
+rbuf: 354
+parts: 354
+i: 247
+rbuf: 356
+parts: 356
+i: 248
+rbuf: 358
+parts: 358
+i: 249
+rbuf: 359
+parts: 359
+i: 250
+rbuf: 361
+parts: 361
+i: 251
+rbuf: 362
+parts: 362
+i: 252
+rbuf: 363
+parts: 363
+i: 253
+rbuf: 374
+parts: 374
+i: 254
+rbuf: 381
+parts: 381
+i: 255
+rbuf: 382
+parts: 382
+i: 256
+rbuf: 387
+parts: 387
+i: 257
+rbuf: 390
+parts: 390
+i: 258
+rbuf: 391
+parts: 391
+i: 259
+rbuf: 392
+parts: 392
+i: 260
+rbuf: 394
+parts: 394
+i: 261
+rbuf: 408
+parts: 408
+i: 262
+rbuf: 412
+parts: 412
+i: 263
+rbuf: 413
+parts: 413
+i: 264
+rbuf: 423
+parts: 423
+i: 265
+rbuf: 426
+parts: 426
+i: 266
+rbuf: 429
+parts: 429
+i: 267
+rbuf: 432
+parts: 432
+i: 268
+rbuf: 433
+parts: 433
+i: 269
+rbuf: 434
+parts: 434
+i: 270
+rbuf: 443
+parts: 443
+i: 271
+rbuf: 444
+parts: 444
+i: 272
+rbuf: 449
+parts: 449
+i: 273
+rbuf: 462
+parts: 462
+i: 274
+rbuf: 469
+parts: 469
+i: 275
+rbuf: 479
+parts: 479
+i: 276
+rbuf: 481
+parts: 481
+i: 277
+rbuf: 499
+parts: 499
+i: 278
+rbuf: 505
+parts: 505
+i: 279
+rbuf: 513
+parts: 513
+i: 280
+rbuf: 515
+parts: 515
+i: 281
+rbuf: 525
+parts: 525
+i: 282
+rbuf: 527
+parts: 527
+i: 283
+rbuf: 531
+parts: 531
+i: 284
+rbuf: 542
+parts: 542
+i: 285
+rbuf: 544
+parts: 544
+i: 286
+rbuf: 546
+parts: 546
+i: 287
+rbuf: 547
+parts: 547
+i: 288
+rbuf: 549
+parts: 549
+i: 289
+rbuf: 555
+parts: 555
+i: 290
+rbuf: 559
+parts: 559
+i: 291
+rbuf: 562
+parts: 562
+i: 292
+rbuf: 563
+parts: 563
+i: 293
+rbuf: 564
+parts: 564
+i: 294
+rbuf: 568
+parts: 568
+i: 295
+rbuf: 574
+parts: 574
+i: 296
+rbuf: 575
+parts: 575
+i: 297
+rbuf: 576
+parts: 576
+i: 298
+rbuf: 577
+parts: 577
+i: 299
+rbuf: 579
+parts: 579
+i: 300
+rbuf: 580
+parts: 580
+i: 301
+rbuf: 584
+parts: 584
+i: 302
+rbuf: 591
+parts: 591
+i: 303
+rbuf: 597
+parts: 597
+i: 304
+rbuf: 598
+parts: 598
+i: 305
+rbuf: 600
+parts: 600
+i: 306
+rbuf: 606
+parts: 606
+i: 307
+rbuf: 611
+parts: 611
+i: 308
+rbuf: 619
+parts: 619
+i: 309
+rbuf: 622
+parts: 622
+i: 310
+rbuf: 627
+parts: 627
+i: 311
+rbuf: 628
+parts: 628
+i: 312
+rbuf: 631
+parts: 631
+i: 313
+rbuf: 632
+parts: 632
+i: 314
+rbuf: 634
+parts: 634
+i: 315
+rbuf: 635
+parts: 635
+i: 316
+rbuf: 636
+parts: 636
+i: 317
+rbuf: 641
+parts: 641
+i: 318
+rbuf: 643
+parts: 643
+i: 319
+rbuf: 646
+parts: 646
+i: 320
+rbuf: 650
+parts: 650
+i: 321
+rbuf: 652
+parts: 652
+i: 322
+rbuf: 654
+parts: 654
+i: 323
+rbuf: 659
+parts: 659
+i: 324
+rbuf: 666
+parts: 666
+i: 325
+rbuf: 673
+parts: 673
+i: 326
+rbuf: 680
+parts: 680
+i: 327
+rbuf: 683
+parts: 683
+i: 328
+rbuf: 684
+parts: 684
+i: 329
+rbuf: 685
+parts: 685
+i: 330
+rbuf: 687
+parts: 687
+i: 331
+rbuf: 695
+parts: 695
+i: 332
+rbuf: 699
+parts: 699
+i: 333
+rbuf: 700
+parts: 700
+i: 334
+rbuf: 704
+parts: 704
+i: 335
+rbuf: 707
+parts: 707
+i: 336
+rbuf: 710
+parts: 710
+i: 337
+rbuf: 715
+parts: 715
+i: 338
+rbuf: 734
+parts: 734
+i: 339
+rbuf: 737
+parts: 737
+i: 340
+rbuf: 749
+parts: 749
+i: 341
+rbuf: 750
+parts: 750
+i: 342
+rbuf: 751
+parts: 751
+i: 343
+rbuf: 1
+parts: 1
+i: 344
+rbuf: 7
+parts: 7
+i: 345
+rbuf: 12
+parts: 12
+i: 346
+rbuf: 23
+parts: 23
+i: 347
+rbuf: 31
+parts: 31
+i: 348
+rbuf: 34
+parts: 34
+i: 349
+rbuf: 37
+parts: 37
+i: 350
+rbuf: 38
+parts: 38
+i: 351
+rbuf: 47
+parts: 47
+i: 352
+rbuf: 48
+parts: 48
+i: 353
+rbuf: 55
+parts: 55
+i: 354
+rbuf: 60
+parts: 60
+i: 355
+rbuf: 63
+parts: 63
+i: 356
+rbuf: 67
+parts: 67
+i: 357
+rbuf: 68
+parts: 68
+i: 358
+rbuf: 70
+parts: 70
+i: 359
+rbuf: 71
+parts: 71
+i: 360
+rbuf: 78
+parts: 78
+i: 361
+rbuf: 80
+parts: 80
+i: 362
+rbuf: 85
+parts: 85
+i: 363
+rbuf: 88
+parts: 88
+i: 364
+rbuf: 89
+parts: 89
+i: 365
+rbuf: 92
+parts: 92
+i: 366
+rbuf: 109
+parts: 109
+i: 367
+rbuf: 113
+parts: 113
+i: 368
+rbuf: 117
+parts: 117
+i: 369
+rbuf: 121
+parts: 121
+i: 370
+rbuf: 126
+parts: 126
+i: 371
+rbuf: 135
+parts: 135
+i: 372
+rbuf: 144
+parts: 144
+i: 373
+rbuf: 150
+parts: 150
+i: 374
+rbuf: 155
+parts: 155
+i: 375
+rbuf: 159
+parts: 159
+i: 376
+rbuf: 164
+parts: 164
+i: 377
+rbuf: 204
+parts: 204
+i: 378
+rbuf: 208
+parts: 208
+i: 379
+rbuf: 215
+parts: 215
+i: 380
+rbuf: 219
+parts: 219
+i: 381
+rbuf: 224
+parts: 224
+i: 382
+rbuf: 231
+parts: 231
+i: 383
+rbuf: 232
+parts: 232
+i: 384
+rbuf: 234
+parts: 234
+i: 385
+rbuf: 235
+parts: 235
+i: 386
+rbuf: 237
+parts: 237
+i: 387
+rbuf: 246
+parts: 246
+i: 388
+rbuf: 252
+parts: 252
+i: 389
+rbuf: 253
+parts: 253
+i: 390
+rbuf: 255
+parts: 255
+i: 391
+rbuf: 258
+parts: 258
+i: 392
+rbuf: 266
+parts: 266
+i: 393
+rbuf: 268
+parts: 268
+i: 394
+rbuf: 275
+parts: 275
+i: 395
+rbuf: 287
+parts: 287
+i: 396
+rbuf: 293
+parts: 293
+i: 397
+rbuf: 294
+parts: 294
+i: 398
+rbuf: 304
+parts: 304
+i: 399
+rbuf: 310
+parts: 310
+i: 400
+rbuf: 314
+parts: 314
+i: 401
+rbuf: 319
+parts: 319
+i: 402
+rbuf: 322
+parts: 322
+i: 403
+rbuf: 323
+parts: 323
+i: 404
+rbuf: 324
+parts: 324
+i: 405
+rbuf: 328
+parts: 328
+i: 406
+rbuf: 370
+parts: 370
+i: 407
+rbuf: 377
+parts: 377
+i: 408
+rbuf: 379
+parts: 379
+i: 409
+rbuf: 386
+parts: 386
+i: 410
+rbuf: 389
+parts: 389
+i: 411
+rbuf: 395
+parts: 395
+i: 412
+rbuf: 405
+parts: 405
+i: 413
+rbuf: 411
+parts: 411
+i: 414
+rbuf: 415
+parts: 415
+i: 415
+rbuf: 417
+parts: 417
+i: 416
+rbuf: 418
+parts: 418
+i: 417
+rbuf: 419
+parts: 419
+i: 418
+rbuf: 425
+parts: 425
+i: 419
+rbuf: 438
+parts: 438
+i: 420
+rbuf: 451
+parts: 451
+i: 421
+rbuf: 474
+parts: 474
+i: 422
+rbuf: 475
+parts: 475
+i: 423
+rbuf: 477
+parts: 477
+i: 424
+rbuf: 478
+parts: 478
+i: 425
+rbuf: 480
+parts: 480
+i: 426
+rbuf: 484
+parts: 484
+i: 427
+rbuf: 492
+parts: 492
+i: 428
+rbuf: 493
+parts: 493
+i: 429
+rbuf: 494
+parts: 494
+i: 430
+rbuf: 500
+parts: 500
+i: 431
+rbuf: 502
+parts: 502
+i: 432
+rbuf: 503
+parts: 503
+i: 433
+rbuf: 510
+parts: 510
+i: 434
+rbuf: 519
+parts: 519
+i: 435
+rbuf: 520
+parts: 520
+i: 436
+rbuf: 533
+parts: 533
+i: 437
+rbuf: 541
+parts: 541
+i: 438
+rbuf: 545
+parts: 545
+i: 439
+rbuf: 550
+parts: 550
+i: 440
+rbuf: 553
+parts: 553
+i: 441
+rbuf: 558
+parts: 558
+i: 442
+rbuf: 560
+parts: 560
+i: 443
+rbuf: 567
+parts: 567
+i: 444
+rbuf: 569
+parts: 569
+i: 445
+rbuf: 571
+parts: 571
+i: 446
+rbuf: 578
+parts: 578
+i: 447
+rbuf: 582
+parts: 582
+i: 448
+rbuf: 583
+parts: 583
+i: 449
+rbuf: 586
+parts: 586
+i: 450
+rbuf: 587
+parts: 587
+i: 451
+rbuf: 590
+parts: 590
+i: 452
+rbuf: 593
+parts: 593
+i: 453
+rbuf: 599
+parts: 599
+i: 454
+rbuf: 601
+parts: 601
+i: 455
+rbuf: 604
+parts: 604
+i: 456
+rbuf: 609
+parts: 609
+i: 457
+rbuf: 610
+parts: 610
+i: 458
+rbuf: 612
+parts: 612
+i: 459
+rbuf: 620
+parts: 620
+i: 460
+rbuf: 621
+parts: 621
+i: 461
+rbuf: 633
+parts: 633
+i: 462
+rbuf: 642
+parts: 642
+i: 463
+rbuf: 648
+parts: 648
+i: 464
+rbuf: 651
+parts: 651
+i: 465
+rbuf: 661
+parts: 661
+i: 466
+rbuf: 663
+parts: 663
+i: 467
+rbuf: 669
+parts: 669
+i: 468
+rbuf: 672
+parts: 672
+i: 469
+rbuf: 677
+parts: 677
+i: 470
+rbuf: 686
+parts: 686
+i: 471
+rbuf: 690
+parts: 690
+i: 472
+rbuf: 692
+parts: 692
+i: 473
+rbuf: 697
+parts: 697
+i: 474
+rbuf: 712
+parts: 712
+i: 475
+rbuf: 716
+parts: 716
+i: 476
+rbuf: 717
+parts: 717
+i: 477
+rbuf: 719
+parts: 719
+i: 478
+rbuf: 722
+parts: 722
+i: 479
+rbuf: 728
+parts: 728
+i: 480
+rbuf: 730
+parts: 730
+i: 481
+rbuf: 746
+parts: 746
+i: 482
+rbuf: 752
+parts: 752
+i: 483
+rbuf: 759
+parts: 759
+i: 484
+rbuf: 4603385331986805545

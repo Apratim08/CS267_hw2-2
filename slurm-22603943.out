@@ -1,0 +1,281 @@
+Rank: 0
+Init size: 192
+Current ghost_parts:224
+Start simulate_one_step. 
+Rank: 1
+Init size: 224
+Current ghost_parts:384
+Could apply force rank: 1
+Could move rank: 1
+Rank: 2
+Init size: 192
+Current ghost_parts:448
+Could apply force rank: 2
+Could move rank: 2
+Rank: 3
+Init size: 224
+Current ghost_parts:360
+Rank: 4
+Init size: 168
+Current ghost_parts:224
+Could apply force rank: 4
+Could move rank: 4
+Could apply force rank: 3
+Could move rank: 3
+send and get rank: 3
+send and get rank: 4
+Could apply force rank: 0
+Could move rank: 0
+send and get rank: 0
+send and get rank: 1
+send and get rank: 2
+get ghost parts rank: 4
+rank: 4 current my_parts:168 current ghost_parts:224
+get ghost parts rank: 2
+rank: 2 current my_parts:192 current ghost_parts:448
+get ghost parts rank: 3
+rank: 3 current my_parts:224 current ghost_parts:360
+get ghost parts rank: 0
+rank: 0 current my_parts:192 current ghost_parts:224
+End simulate_one_step. 
+get ghost parts rank: 1
+rank: 1 current my_parts:224 current ghost_parts:384
+Rank: 1 my_parts: 224
+Rank: 2 my_parts: 192
+Rank: 3 my_parts: 224
+Rank: 4 my_parts: 168
+Could gatherv: 0.557002
+Could copy particles: 0.557002
+Could free memory: 0.557002
+Rank: 0 my_parts: 192
+Could apply force rank: 4
+Could move rank: 4
+Could apply force rank: 3
+Could move rank: 3
+Could apply force rank: 1
+Could apply force rank: 2
+Could move rank: 2
+send and get rank: 3
+send and get rank: 4
+Could move rank: 1
+Start simulate_one_step. 
+Could apply force rank: 0
+Could move rank: 0
+send and get rank: 0
+send and get rank: 1
+send and get rank: 2
+get ghost parts rank: 0
+rank: 0 current my_parts:192 current ghost_parts:224
+End simulate_one_step. 
+Start simulate_one_step. 
+get ghost parts rank: 1
+rank: 1 current my_parts:224 current ghost_parts:384
+get ghost parts rank: 4
+rank: 4 current my_parts:168 current ghost_parts:224
+get ghost parts rank: 2
+rank: 2 current my_parts:192 current ghost_parts:448
+get ghost parts rank: 3
+rank: 3 current my_parts:224 current ghost_parts:360
+Could apply force rank: 4
+Could move rank: 4
+Could apply force rank: 1
+Could move rank: 1
+Could apply force rank: 3
+Could move rank: 3
+Could apply force rank: 0
+Could move rank: 0
+send and get rank: 1
+Could apply force rank: 2
+Could move rank: 2
+send and get rank: 2
+send and get rank: 3
+send and get rank: 4
+send and get rank: 0
+get ghost parts rank: 4
+rank: 4 current my_parts:168 current ghost_parts:224
+get ghost parts rank: 0
+rank: 0 current my_parts:192 current ghost_parts:224
+End simulate_one_step. 
+Start simulate_one_step. 
+get ghost parts rank: 1
+rank: 1 current my_parts:224 current ghost_parts:384
+get ghost parts rank: 2
+rank: 2 current my_parts:192 current ghost_parts:448
+get ghost parts rank: 3
+rank: 3 current my_parts:224 current ghost_parts:360
+Could apply force rank: 4
+Could move rank: 4
+Could apply force rank: 0
+Could move rank: 0
+Could apply force rank: 1
+Could move rank: 1
+send and get rank: 0
+send and get rank: 1
+Could apply force rank: 2
+Could move rank: 2
+send and get rank: 2
+Could apply force rank: 3
+Could move rank: 3
+send and get rank: 3
+send and get rank: 4
+get ghost parts rank: 0
+rank: 0 current my_parts:192 current ghost_parts:224
+End simulate_one_step. 
+Start simulate_one_step. 
+get ghost parts rank: 1
+rank: 1 current my_parts:224 current ghost_parts:384
+get ghost parts rank: 4
+rank: 4 current my_parts:168 current ghost_parts:224
+get ghost parts rank: 3
+rank: 3 current my_parts:224 current ghost_parts:360
+get ghost parts rank: 2
+rank: 2 current my_parts:192 current ghost_parts:448
+Could apply force rank: 4
+Could move rank: 4
+Could apply force rank: 0
+Could move rank: 0
+Could apply force rank: 1
+Could move rank: 1
+Could apply force rank: 3
+Could move rank: 3
+Could apply force rank: 2
+Could move rank: 2
+send and get rank: 2
+send and get rank: 3
+send and get rank: 0
+send and get rank: 1
+send and get rank: 4
+get ghost parts rank: 0
+rank: 0 current my_parts:192 current ghost_parts:224
+End simulate_one_step. 
+Start simulate_one_step. 
+get ghost parts rank: 1
+rank: 1 current my_parts:224 current ghost_parts:384
+get ghost parts rank: 4
+rank: 4 current my_parts:168 current ghost_parts:224
+get ghost parts rank: 3
+rank: 3 current my_parts:224 current ghost_parts:360
+get ghost parts rank: 2
+rank: 2 current my_parts:192 current ghost_parts:448
+Could apply force rank: 4
+Could move rank: 4
+Could apply force rank: 0
+Could move rank: 0
+Could apply force rank: 1
+Could move rank: 1
+Could apply force rank: 2
+Could move rank: 2
+Could apply force rank: 3
+Could move rank: 3
+send and get rank: 3
+send and get rank: 0
+send and get rank: 1
+send and get rank: 2
+send and get rank: 4
+get ghost parts rank: 0
+rank: 0 current my_parts:192 current ghost_parts:224
+End simulate_one_step. 
+Start simulate_one_step. 
+get ghost parts rank: 1
+rank: 1 current my_parts:224 current ghost_parts:384
+get ghost parts rank: 4
+rank: 4 current my_parts:168 current ghost_parts:224
+get ghost parts rank: 2
+rank: 2 current my_parts:192 current ghost_parts:448
+get ghost parts rank: 3
+rank: 3 current my_parts:224 current ghost_parts:360
+Could apply force rank: 4
+Could move rank: 4
+Could apply force rank: 0
+Could move rank: 0
+Could apply force rank: 1
+Could move rank: 1
+Could apply force rank: 2
+Could move rank: 2
+send and get rank: 0
+send and get rank: 1
+Could apply force rank: 3
+Could move rank: 3
+send and get rank: 2
+send and get rank: 3
+send and get rank: 4
+get ghost parts rank: 0
+rank: 0 current my_parts:192 current ghost_parts:224
+End simulate_one_step. 
+Start simulate_one_step. 
+get ghost parts rank: 1
+rank: 1 current my_parts:224 current ghost_parts:384
+get ghost parts rank: 4
+rank: 4 current my_parts:168 current ghost_parts:224
+get ghost parts rank: 2
+rank: 2 current my_parts:192 current ghost_parts:448
+get ghost parts rank: 3
+rank: 3 current my_parts:224 current ghost_parts:360
+Could apply force rank: 4
+Could move rank: 4
+Could apply force rank: 0
+Could move rank: 0
+Could apply force rank: 1
+Could move rank: 1
+send and get rank: 0
+send and get rank: 1
+Could apply force rank: 2
+Could move rank: 2
+send and get rank: 2
+Could apply force rank: 3
+Could move rank: 3
+send and get rank: 3
+send and get rank: 4
+get ghost parts rank: 0
+rank: 0 current my_parts:192 current ghost_parts:224
+End simulate_one_step. 
+Start simulate_one_step. 
+get ghost parts rank: 1
+rank: 1 current my_parts:224 current ghost_parts:384
+get ghost parts rank: 4
+rank: 4 current my_parts:168 current ghost_parts:224
+get ghost parts rank: 2
+rank: 2 current my_parts:192 current ghost_parts:448
+get ghost parts rank: 3
+rank: 3 current my_parts:224 current ghost_parts:360
+Could apply force rank: 4
+Could move rank: 4
+Could apply force rank: 0
+Could move rank: 0
+Could apply force rank: 2
+Could move rank: 2
+Could apply force rank: 3
+start push below: 0
+end push below: 1
+start push above: 0
+end push above: 1
+start push above: 1
+end push above: 2
+Could apply force rank: 1
+start push above: 0
+end push above: 1
+start push above: 1
+end push above: 2
+start push above: 2
+end push above: 3
+start push above: 3
+end push above: 4
+start push above: 4
+end push above: 5
+start push above: 5
+end push above: 6
+start push above: 6
+end push above: 7
+start push above: 2
+end push above: 3
+start push above: 3
+end push above: 4
+start push above: 4
+end push above: 5
+start push above: 5
+end push above: 6
+srun: error: nid004205: tasks 1,3: Segmentation fault
+srun: Terminating StepId=22603943.0
+slurmstepd: error: *** STEP 22603943.0 ON nid004205 CANCELLED AT 2024-03-06T01:32:17 ***
+srun: error: nid004205: tasks 0,2,4: Terminated
+srun: Force Terminated StepId=22603943.0

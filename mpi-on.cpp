@@ -1,6 +1,6 @@
 #include "common.h"
 #include <mpi.h>
-#include <cmath>    
+#include <cmath>
 #include <vector>
 #include <iostream>
 #include <list>
@@ -49,7 +49,7 @@ void send_outgoing_parts(std::list<particle_t>* outgoing_parts, int send_rank, i
     // Send each particle one by one
     for (auto it = outgoing_parts->begin(); it != outgoing_parts->end(); ++it) {
         particle_t& particle = *it;
-    	MPI_Send(&particle, 1, PARTICLE, destination_rank, 0, MPI_COMM_WORLD);
+        MPI_Send(&particle, 1, PARTICLE, destination_rank, 0, MPI_COMM_WORLD);
     }
 }
 void receive_incoming_parts(std::list<particle_t>& incoming_parts, int incoming_rank) {
@@ -82,14 +82,19 @@ static void part_cpy(particle_t& src_part, particle_t& dst_part){
     dst_part.ay = src_part.ay;
 }
 std::list<particle_t> incoming_parts;
-std::list<particle_t> my_parts;
+std::vector<std::list<particle_t>> my_parts;
 std::list<particle_t> above_outgoing_parts;
 std::list<particle_t> below_outgoing_parts;
-std::list<particle_t> ghost_parts;
+std::vector<std::list<particle_t>> ghost_parts;
 std::list<particle_t> above_ghost_parts;
 std::list<particle_t> below_ghost_parts;
 void init_simulation(particle_t* parts, int num_parts, double size, int rank, int num_procs) {
     double row_width = size / num_procs;
+    int bucket_num = static_cast<int>(size / cutoff);
+    double col_width = size / bucket_num;
+    my_parts.resize(bucket_num);
+    ghost_parts.resize(bucket_num);
+
     std::vector<std::list<particle_t>> otherghost;
     otherghost.resize(num_procs);
     // Find particles the current processor need to handle (1D layout)
@@ -109,13 +114,16 @@ void init_simulation(particle_t* parts, int num_parts, double size, int rank, in
                 otherghost[bin + 1].push_back(parts[i]);
             }
             if (bin == rank){
-                my_parts.push_back(parts[i]);
+                int xindex = static_cast<int>(parts[i].x / col_width);
+                my_parts[xindex].push_back(parts[i]);
             }
             if (bin == rank - 1 && abs(parts[i].y - rank * row_width) <= cutoff) {
-                ghost_parts.push_back(parts[i]);
+                int xindex = static_cast<int>(parts[i].x / col_width);
+                ghost_parts[xindex].push_back(parts[i]);
             }
             if (bin == rank + 1 && abs(parts[i].y - (rank + 1) * row_width) <= cutoff) {
-                ghost_parts.push_back(parts[i]);
+                int xindex = static_cast<int>(parts[i].x / col_width);
+                ghost_parts[xindex].push_back(parts[i]);
             }    
         }
         for (int out_proc = 1; out_proc < num_procs; ++out_proc) {
@@ -124,7 +132,12 @@ void init_simulation(particle_t* parts, int num_parts, double size, int rank, in
             parts_out.clear();
         }
     } else {
-        receive_incoming_parts(my_parts, 0);
+        std::list<particle_t> rec_buf;
+        receive_incoming_parts(rec_buf, 0);
+        for (particle_t& particle : rec_buf) {
+            int xindex = static_cast<int>(particle.x / col_width);
+            my_parts[xindex].push_back(particle);
+        }
     }
     if (rank == 0) {
         for (int out_proc = 1; out_proc < num_procs; ++out_proc) {
@@ -133,37 +146,63 @@ void init_simulation(particle_t* parts, int num_parts, double size, int rank, in
             parts_out.clear();
         }
     } else {
-        receive_incoming_parts(ghost_parts, 0);
+        std::list<particle_t> rec_buf;
+        receive_incoming_parts(rec_buf, 0);
+        for (particle_t& particle : rec_buf) {
+            int xindex = static_cast<int>(particle.x / col_width);
+            ghost_parts[xindex].push_back(particle);
+        }
     }
 }
 void simulate_one_step(particle_t* parts, int num_parts, double size, int rank, int num_procs) {
     double row_width = size / num_procs;
+    int bucket_num = static_cast<int>(size / cutoff);
+    double col_width = size / bucket_num;
+
     // apply force to all particles in my_parts
-    for (particle_t& particle : my_parts) {
-        for (particle_t& neighbor : my_parts) {
-            apply_force(particle, neighbor);
-        }
-        for (particle_t& neighbor : ghost_parts) {
-            apply_force(particle, neighbor);
+    for (int i = 0; i < bucket_num; ++i) {
+        for (particle_t& particle : my_parts[i]) {
+            for (int j = -1; j < 2; ++j) {
+                if (i + j >= 0 && i + j < bucket_num) {
+                    for (particle_t& neighbor : my_parts[i + j]) {
+                        apply_force(particle, neighbor);
+                    }
+                    for (particle_t& neighbor : ghost_parts[i + j]) {
+                        apply_force(particle, neighbor);
+                    }
+                }
+            }
         }
     }
-    ghost_parts.clear();
+    
+    for (int i = 0; i < bucket_num; ++i) {
+        ghost_parts[i].clear();
+    }
+    
     // move particles and find outgoing particles
-    for (auto it = my_parts.begin(); it != my_parts.end();) {
-        particle_t& particle = *it;
-        move(particle, size);
-        particle.ax = particle.ay = 0;
-        int bin = static_cast<int>(particle.y / row_width);
-        if (bin == rank - 1) {
-            below_outgoing_parts.push_back(particle);
-            it = my_parts.erase(it);  // Erase the element and advance the iterator
-        }
-        else if (bin == rank + 1) {
-            above_outgoing_parts.push_back(particle);
-            it = my_parts.erase(it);  // Erase the element and advance the iterator
-        }
-        else {
-            ++it;  // Move to the next element
+    for (int i = 0; i < bucket_num; ++i) {
+        for (auto it = my_parts[i].begin(); it != my_parts[i].end();) {
+            particle_t& particle = *it;
+            move(particle, size);
+            particle.ax = particle.ay = 0;
+            int bin = static_cast<int>(particle.y / row_width);
+            if (bin == rank - 1) {
+                below_outgoing_parts.push_back(particle);
+                it = my_parts[i].erase(it);  // Erase the element and advance the iterator
+            }
+            else if (bin == rank + 1) {
+                above_outgoing_parts.push_back(particle);
+                it = my_parts[i].erase(it);  // Erase the element and advance the iterator
+            }
+            else {
+                int xindex = static_cast<int>(particle.x / col_width);
+                if (xindex != i) {
+                    my_parts[xindex].push_back(particle);
+                    it = my_parts[i].erase(it);  // Erase the element and advance the iterator
+                } else {
+                    ++it;  // Move to the next element
+                }
+            }
         }
     }
 
@@ -180,14 +219,16 @@ void simulate_one_step(particle_t* parts, int num_parts, double size, int rank, 
         if (rank + 1 < num_procs) {
             receive_incoming_parts(incoming_parts, rank + 1);
             for (particle_t& particle : incoming_parts) {
-                my_parts.push_back(particle);
+                int xindex = static_cast<int>(particle.x / col_width);
+                my_parts[xindex].push_back(particle);
             }
             incoming_parts.clear();
         }
         if (rank - 1 >= 0) {
             receive_incoming_parts(incoming_parts, rank - 1);
             for (particle_t& particle : incoming_parts) {
-                my_parts.push_back(particle);
+                int xindex = static_cast<int>(particle.x / col_width);
+                my_parts[xindex].push_back(particle);
             }
             incoming_parts.clear();
         }
@@ -196,14 +237,16 @@ void simulate_one_step(particle_t* parts, int num_parts, double size, int rank, 
         if (rank + 1 < num_procs) {
             receive_incoming_parts(incoming_parts, rank + 1);
             for (particle_t& particle : incoming_parts) {
-                my_parts.push_back(particle);
+                int xindex = static_cast<int>(particle.x / col_width);
+                my_parts[xindex].push_back(particle);
             }
             incoming_parts.clear();
         }
         if (rank - 1 >= 0) {
             receive_incoming_parts(incoming_parts, rank - 1);
             for (particle_t& particle : incoming_parts) {
-                my_parts.push_back(particle);
+                int xindex = static_cast<int>(particle.x / col_width);
+                my_parts[xindex].push_back(particle);
             }
             incoming_parts.clear();
         }
@@ -218,12 +261,15 @@ void simulate_one_step(particle_t* parts, int num_parts, double size, int rank, 
     }
 
     // send ghost parts, split by even / odd to avoid dead lock
-    for (particle_t& particle : my_parts) {
-        if (rank - 1 >= 0 && abs(particle.y - rank * row_width) <= cutoff) {
-            below_ghost_parts.push_back(particle);
-        }
-        if (rank + 1 < num_procs && abs(particle.y - (rank + 1) * row_width) <= cutoff) {
-            above_ghost_parts.push_back(particle);
+    for (std::list<particle_t>& particle_list : my_parts) {
+        // Iterate over each particle in the list
+        for (particle_t& particle : particle_list) {
+            if (rank - 1 >= 0 && abs(particle.y - rank * row_width) <= cutoff) {
+                below_ghost_parts.push_back(particle);
+            }
+            if (rank + 1 < num_procs && abs(particle.y - (rank + 1) * row_width) <= cutoff) {
+                above_ghost_parts.push_back(particle);
+            }
         }
     }
     if (rank % 2 == 0) {
@@ -239,7 +285,8 @@ void simulate_one_step(particle_t* parts, int num_parts, double size, int rank, 
             incoming_parts.clear();
             receive_incoming_parts(incoming_parts, rank - 1);
             for (particle_t& particle : incoming_parts) {
-                ghost_parts.push_back(particle);
+                int xindex = static_cast<int>(particle.x / col_width);
+                ghost_parts[xindex].push_back(particle);
             }
             incoming_parts.clear();
         }
@@ -247,7 +294,8 @@ void simulate_one_step(particle_t* parts, int num_parts, double size, int rank, 
             incoming_parts.clear();
             receive_incoming_parts(incoming_parts, rank + 1);
             for (particle_t& particle : incoming_parts) {
-                ghost_parts.push_back(particle);
+                int xindex = static_cast<int>(particle.x / col_width);
+                ghost_parts[xindex].push_back(particle);
             }
             incoming_parts.clear();
         }
@@ -256,14 +304,16 @@ void simulate_one_step(particle_t* parts, int num_parts, double size, int rank, 
         if (rank - 1 >= 0) {
             receive_incoming_parts(incoming_parts, rank - 1);
             for (particle_t& particle : incoming_parts) {
-                ghost_parts.push_back(particle);
+                int xindex = static_cast<int>(particle.x / col_width);
+                ghost_parts[xindex].push_back(particle);
             }
             incoming_parts.clear();
         }
         if (rank + 1 < num_procs) {
             receive_incoming_parts(incoming_parts, rank + 1);
             for (particle_t& particle : incoming_parts) {
-                ghost_parts.push_back(particle);
+                int xindex = static_cast<int>(particle.x / col_width);
+                ghost_parts[xindex].push_back(particle);
             }
             incoming_parts.clear();
         }
@@ -282,14 +332,24 @@ void gather_for_save(particle_t* parts, int num_parts, double size, int rank, in
     
     std::list<particle_t> rbuf;
     // make an array for sending
-    particle_t* local_parts_array = new particle_t[my_parts.size()];
-    std::copy(my_parts.begin(), my_parts.end(), local_parts_array);
+    std::list<particle_t> local_parts_array;
+    for (std::list<particle_t>& particle_list : my_parts) {
+        // Iterate over each particle in the list
+        for (particle_t& particle : particle_list) {
+            // Copy the particle to the current position in local_parts_array
+            local_parts_array.push_back(particle);
+        }
+    }
+
     if (rank == 0) {
-        for (particle_t& particle : my_parts) {
-            if (particle.id <= 0 || particle.id > num_parts) {
+        for (std::list<particle_t>& particle_list : my_parts) {
+            // Iterate over each particle in the list
+            for (particle_t& particle : particle_list) {
+                if (particle.id <= 0 || particle.id > num_parts) {
                     std::cout << "rank: " << 0 << " has weired paritcle:" << particle.id << std::endl;
                 }
-            part_cpy(particle, parts[id_to_index(particle.id)]);
+                part_cpy(particle, parts[id_to_index(particle.id)]);
+            }
         }
         for (int i = 1; i < num_procs; ++i) {
             receive_incoming_parts(rbuf, i);
@@ -302,8 +362,6 @@ void gather_for_save(particle_t* parts, int num_parts, double size, int rank, in
             rbuf.clear();
         }
     } else {
-        send_outgoing_parts(&my_parts, rank, 0);
+        send_outgoing_parts(&local_parts_array, rank, 0);
     }
-
 }
-
