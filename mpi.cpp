@@ -5,26 +5,8 @@
 #include <iostream>
 #include <list>
 #include <cstdlib> // for exit()
-bool particle_t::operator==(const particle_t& other) const {
-    return (fabs(x - other.x) < epsilon &&
-            fabs(y - other.y) < epsilon &&
-            fabs(vx - other.vx) < epsilon &&
-            fabs(vy - other.vy) < epsilon &&
-            fabs(ax - other.ax) < epsilon &&
-            fabs(ay - other.ay) < epsilon);
-}
-particle_t& particle_t::operator=(const particle_t& other) {
-    if (this != &other) {
-        id = other.id;
-        x = other.x;
-        y = other.y;
-        vx = other.vx;
-        vy = other.vy;
-        ax = other.ax;
-        ay = other.ay;
-    }
-    return *this;
-}
+
+
 // Apply the force from neighbor to particle
 void apply_force(particle_t& particle, particle_t& neighbor) {
     // Calculate Distance
@@ -65,11 +47,10 @@ void send_outgoing_parts(std::list<particle_t>* outgoing_parts, int send_rank, i
     // Send the number of particles first
     MPI_Send(&num_particles, 1, MPI_INT, destination_rank, 0, MPI_COMM_WORLD);
     // Send each particle one by one
-    for (const auto& particle : *outgoing_parts) {
-        MPI_Send(&particle, sizeof(particle_t), MPI_BYTE, destination_rank, 0, MPI_COMM_WORLD);
+    for (auto it = outgoing_parts->begin(); it != outgoing_parts->end(); ++it) {
+        particle_t& particle = *it;
+    	MPI_Send(&particle, 1, PARTICLE, destination_rank, 0, MPI_COMM_WORLD);
     }
-    // Clear the outgoing parts
-    outgoing_parts->clear();
 }
 void receive_incoming_parts(std::list<particle_t>& incoming_parts, int incoming_rank) {
     MPI_Status status;
@@ -79,7 +60,7 @@ void receive_incoming_parts(std::list<particle_t>& incoming_parts, int incoming_
     // Receive each particle one by one and add to the list
     for (int i = 0; i < num_particles; ++i) {
         particle_t received_particle;
-        MPI_Recv(&received_particle, sizeof(particle_t), MPI_BYTE, incoming_rank, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
+        MPI_Recv(&received_particle, 1, PARTICLE, incoming_rank, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
         incoming_parts.push_back(received_particle);
     }
 }
@@ -140,22 +121,20 @@ void init_simulation(particle_t* parts, int num_parts, double size, int rank, in
         for (int out_proc = 1; out_proc < num_procs; ++out_proc) {
             std::list<particle_t> parts_out = outsending[out_proc];
             send_outgoing_parts(&parts_out, 0, out_proc);
+            parts_out.clear();
         }
     } else {
         receive_incoming_parts(my_parts, 0);
     }
-    MPI_Barrier(MPI_COMM_WORLD);
     if (rank == 0) {
         for (int out_proc = 1; out_proc < num_procs; ++out_proc) {
             std::list<particle_t> parts_out = otherghost[out_proc];
             send_outgoing_parts(&parts_out, 0, out_proc);
+            parts_out.clear();
         }
     } else {
         receive_incoming_parts(ghost_parts, 0);
     }
-    std::cout << "Rank: " << rank << std::endl;
-    std::cout << "Init size: " << my_parts.size() << std::endl;
-    std::cout << "Current ghost_parts:" << ghost_parts.size() << std::endl;
 }
 void simulate_one_step(particle_t* parts, int num_parts, double size, int rank, int num_procs) {
     double row_width = size / num_procs;
@@ -168,31 +147,26 @@ void simulate_one_step(particle_t* parts, int num_parts, double size, int rank, 
             apply_force(particle, neighbor);
         }
     }
-    std::cout << "Could apply force rank: " << rank << std::endl;
     ghost_parts.clear();
     // move particles and find outgoing particles
-    for (particle_t& particle : my_parts) {
+    for (auto it = my_parts.begin(); it != my_parts.end();) {
+        particle_t& particle = *it;
         move(particle, size);
         particle.ax = particle.ay = 0;
         int bin = static_cast<int>(particle.y / row_width);
         if (bin == rank - 1) {
-            std::cout << "start push below: " << below_outgoing_parts.size() << std::endl;
-            particle_t copy_part;
-            part_cpy(particle, copy_part);
-            below_outgoing_parts.push_back(copy_part);
-            my_parts.remove(particle);
-            std::cout << "end push below: " << below_outgoing_parts.size() << std::endl;
+            below_outgoing_parts.push_back(particle);
+            it = my_parts.erase(it);  // Erase the element and advance the iterator
         }
-        if (bin == rank + 1) {
-            std::cout << "start push above: " << above_outgoing_parts.size() << std::endl;
-            particle_t copy_part;
-            part_cpy(particle, copy_part);
-            above_outgoing_parts.push_back(copy_part);
-            my_parts.remove(particle);
-            std::cout << "end push above: " << above_outgoing_parts.size() << std::endl;
+        else if (bin == rank + 1) {
+            above_outgoing_parts.push_back(particle);
+            it = my_parts.erase(it);  // Erase the element and advance the iterator
+        }
+        else {
+            ++it;  // Move to the next element
         }
     }
-    std::cout << "Could move rank: " << rank << std::endl;
+
     // redistribute parts, split by even / odd to avoid dead lock
     if (rank % 2 == 0) {
         if (rank + 1 < num_procs) {
@@ -206,18 +180,14 @@ void simulate_one_step(particle_t* parts, int num_parts, double size, int rank, 
         if (rank + 1 < num_procs) {
             receive_incoming_parts(incoming_parts, rank + 1);
             for (particle_t& particle : incoming_parts) {
-                particle_t copy_part;
-                part_cpy(particle, copy_part);
-                my_parts.push_back(copy_part);
+                my_parts.push_back(particle);
             }
             incoming_parts.clear();
         }
         if (rank - 1 >= 0) {
             receive_incoming_parts(incoming_parts, rank - 1);
             for (particle_t& particle : incoming_parts) {
-                particle_t copy_part;
-                part_cpy(particle, copy_part);
-                my_parts.push_back(copy_part);
+                my_parts.push_back(particle);
             }
             incoming_parts.clear();
         }
@@ -226,18 +196,14 @@ void simulate_one_step(particle_t* parts, int num_parts, double size, int rank, 
         if (rank + 1 < num_procs) {
             receive_incoming_parts(incoming_parts, rank + 1);
             for (particle_t& particle : incoming_parts) {
-                particle_t copy_part;
-                part_cpy(particle, copy_part);
-                my_parts.push_back(copy_part);
+                my_parts.push_back(particle);
             }
             incoming_parts.clear();
         }
         if (rank - 1 >= 0) {
             receive_incoming_parts(incoming_parts, rank - 1);
             for (particle_t& particle : incoming_parts) {
-                particle_t copy_part;
-                part_cpy(particle, copy_part);
-                my_parts.push_back(copy_part);
+                my_parts.push_back(particle);
             }
             incoming_parts.clear();
         }
@@ -250,18 +216,14 @@ void simulate_one_step(particle_t* parts, int num_parts, double size, int rank, 
             below_outgoing_parts.clear();
         }
     }
-    std::cout << "send and get rank: " << rank << std::endl;
+
     // send ghost parts, split by even / odd to avoid dead lock
     for (particle_t& particle : my_parts) {
         if (rank - 1 >= 0 && abs(particle.y - rank * row_width) <= cutoff) {
-            particle_t copy_part;
-            part_cpy(particle, copy_part);
-            below_ghost_parts.push_back(copy_part);
+            below_ghost_parts.push_back(particle);
         }
         if (rank + 1 < num_procs && abs(particle.y - (rank + 1) * row_width) <= cutoff) {
-            particle_t copy_part;
-            part_cpy(particle, copy_part);
-            above_ghost_parts.push_back(copy_part);
+            above_ghost_parts.push_back(particle);
         }
     }
     if (rank % 2 == 0) {
@@ -274,20 +236,18 @@ void simulate_one_step(particle_t* parts, int num_parts, double size, int rank, 
             below_ghost_parts.clear();
         }
         if (rank - 1 >= 0) {
+            incoming_parts.clear();
             receive_incoming_parts(incoming_parts, rank - 1);
             for (particle_t& particle : incoming_parts) {
-                particle_t copy_part;
-                part_cpy(particle, copy_part);
-                ghost_parts.push_back(copy_part);
+                ghost_parts.push_back(particle);
             }
             incoming_parts.clear();
         }
         if (rank + 1 < num_procs) {
+            incoming_parts.clear();
             receive_incoming_parts(incoming_parts, rank + 1);
             for (particle_t& particle : incoming_parts) {
-                particle_t copy_part;
-                part_cpy(particle, copy_part);
-                ghost_parts.push_back(copy_part);
+                ghost_parts.push_back(particle);
             }
             incoming_parts.clear();
         }
@@ -296,18 +256,14 @@ void simulate_one_step(particle_t* parts, int num_parts, double size, int rank, 
         if (rank - 1 >= 0) {
             receive_incoming_parts(incoming_parts, rank - 1);
             for (particle_t& particle : incoming_parts) {
-                particle_t copy_part;
-                part_cpy(particle, copy_part);
-                ghost_parts.push_back(copy_part);
+                ghost_parts.push_back(particle);
             }
             incoming_parts.clear();
         }
         if (rank + 1 < num_procs) {
             receive_incoming_parts(incoming_parts, rank + 1);
             for (particle_t& particle : incoming_parts) {
-                particle_t copy_part;
-                part_cpy(particle, copy_part);
-                ghost_parts.push_back(copy_part);
+                ghost_parts.push_back(particle);
             }
             incoming_parts.clear();
         }
@@ -320,64 +276,34 @@ void simulate_one_step(particle_t* parts, int num_parts, double size, int rank, 
             below_ghost_parts.clear();
         }
     }
-    std::cout << "get ghost parts rank: " << rank << std::endl;
-    std::cout << "rank: " << rank << " current my_parts:" << my_parts.size() << " current ghost_parts:" << ghost_parts.size() << std::endl;
 }
 #include <algorithm> // for std::sort
 void gather_for_save(particle_t* parts, int num_parts, double size, int rank, int num_procs) {
     
-    int* rcounts = nullptr;
-    int* displs = nullptr;
-    particle_t* rbuf = nullptr;
+    std::list<particle_t> rbuf;
     // make an array for sending
     particle_t* local_parts_array = new particle_t[my_parts.size()];
     std::copy(my_parts.begin(), my_parts.end(), local_parts_array);
-    // get all my_parts sizes first
     if (rank == 0) {
-        rcounts = (int *)malloc(num_procs*sizeof(int)); 
-    }
-    int num = my_parts.size();
-    MPI_Gather( &num, 1, MPI_INT, rcounts, 1, MPI_INT, 0, MPI_COMM_WORLD);
-    
-    /* root now has correct rcounts, using these we set displs[] so 
-     * that data is placed contiguously (or concatenated) at receive end 
-     */ 
-    if (rank == 0) {
-        displs = (int *)malloc(num_procs*sizeof(int)); 
-        displs[0] = 0; 
-        for (int i = 1; i < num_procs; ++i) { 
-            displs[i] = displs[i-1]+rcounts[i-1]; 
-        } 
-        /* And, create receive buffer  */ 
-        rbuf = new particle_t[num_parts];
-    }
-    MPI_Gatherv(local_parts_array, my_parts.size(), PARTICLE, rbuf, rcounts, displs, PARTICLE, 0, MPI_COMM_WORLD); 
-    delete[] local_parts_array;
-
-    // on root, edit the entire parts array based on info in rbuf
-    if (rank == 0) {
-        std::cout << "Could gatherv: " << rbuf[0].x << std::endl;
-        for (int i = 0; i < num_parts; ++i) {
-            int ori_index = id_to_index(rbuf[i].id);
-            part_cpy(rbuf[i], parts[ori_index]);
+        for (particle_t& particle : my_parts) {
+            if (particle.id <= 0 || particle.id > num_parts) {
+                    std::cout << "rank: " << 0 << " has weired paritcle:" << particle.id << std::endl;
+                }
+            part_cpy(particle, parts[id_to_index(particle.id)]);
         }
-        std::cout << "Could copy particles: " << rbuf[0].x << std::endl;
-        // free memory on root
-        free(rcounts);
-        free(displs);
-        delete[] rbuf;
-        std::cout << "Could free memory: " << rbuf[0].x << std::endl;
+        for (int i = 1; i < num_procs; ++i) {
+            receive_incoming_parts(rbuf, i);
+            for (particle_t& particle : rbuf) {
+                if (particle.id <= 0 || particle.id > num_parts) {
+                    std::cout << "rank: " << i << " send weired paritcle:" << particle.id << std::endl;
+                }
+                part_cpy(particle, parts[id_to_index(particle.id)]);
+            }
+            rbuf.clear();
+        }
+    } else {
+        send_outgoing_parts(&my_parts, rank, 0);
     }
-    std::cout << "Rank: " << rank << " my_parts: " << my_parts.size() << std::endl;
-    MPI_Barrier(MPI_COMM_WORLD);
+
 }
 
-void cleanup() {
-    my_parts.clear();
-    above_outgoing_parts.clear();
-    below_outgoing_parts.clear();
-    ghost_parts.clear();
-    above_ghost_parts.clear();
-    below_ghost_parts.clear();
-    incoming_parts.clear();
-}
