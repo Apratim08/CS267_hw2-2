@@ -147,25 +147,19 @@ int main(int argc, char** argv) {
         init_particles(parts, num_parts, size, part_seed);
     }
 
-    MPI_Bcast(parts, num_parts, PARTICLE, 0, MPI_COMM_WORLD);
+        MPI_Bcast(parts, num_parts, PARTICLE, 0, MPI_COMM_WORLD);
 
     // Algorithm
     auto start_time = std::chrono::steady_clock::now();
 
-    std::cout << "start of init_simulation" << std::endl;
     init_simulation(parts, num_parts, size, rank, num_procs);
-    std::cout << "init_simulation end" << std::endl;
-
 
     for (int step = 0; step < nsteps; ++step) {
-        std::cout << "start simulation one step" << std::endl;
         simulate_one_step(parts, num_parts, size, rank, num_procs);
-        std::cout << "end of simulate_one_step" << std::endl;
+
         // Save state if necessary
         if (fsave.good() && (step % savefreq) == 0) {
-            std::cout << "start gather_for_save" << std::endl;
             gather_for_save(parts, num_parts, size, rank, num_procs);
-            std::cout << "end of gather_for_save" << std::endl;
             if (rank == 0) {
                 save(fsave, parts, num_parts, size);
             }

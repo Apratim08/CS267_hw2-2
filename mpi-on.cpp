@@ -327,7 +327,7 @@ void simulate_one_step(particle_t* parts, int num_parts, double size, int rank, 
         }
     }
 }
-#include <algorithm> // for std::sort
+
 void gather_for_save(particle_t* parts, int num_parts, double size, int rank, int num_procs) {
     
     std::list<particle_t> rbuf;
