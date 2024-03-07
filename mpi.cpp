@@ -1,6 +1,6 @@
 #include "common.h"
 #include <mpi.h>
-#include <cmath>
+#include <cmath>    
 #include <vector>
 #include <iostream>
 #include <list>

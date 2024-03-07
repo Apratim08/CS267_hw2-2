@@ -335,7 +335,7 @@ void simulate_one_step(particle_t* parts, int num_parts, double size, int rank, 
         }
     }
 }
-#include <algorithm> // for std::sort
+
 void gather_for_save(particle_t* parts, int num_parts, double size, int rank, int num_procs) {
     double row_width = size / num_procs;
     int bucket_num = static_cast<int>(size / cutoff);

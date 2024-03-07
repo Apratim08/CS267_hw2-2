@@ -22,14 +22,6 @@ typedef struct particle_t {
     double vy;   // Velocity Y
     double ax;   // Acceleration X
     double ay;   // Acceleration Y
-    //void* data;
-
-    // Define the equality operator for particle_t
-    const double epsilon = 1e-9; // Adjust epsilon based on your application's requirements
-
-    bool operator==(const particle_t& other) const;
-    particle_t& operator=(const particle_t& other);
-
 } particle_t;
 
 extern MPI_Datatype PARTICLE;

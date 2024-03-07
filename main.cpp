@@ -147,7 +147,7 @@ int main(int argc, char** argv) {
         init_particles(parts, num_parts, size, part_seed);
     }
 
-    MPI_Bcast(parts, num_parts, PARTICLE, 0, MPI_COMM_WORLD);
+        MPI_Bcast(parts, num_parts, PARTICLE, 0, MPI_COMM_WORLD);
 
     // Algorithm
     auto start_time = std::chrono::steady_clock::now();
