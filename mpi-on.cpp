@@ -132,12 +132,12 @@ void init_simulation(particle_t* parts, int num_parts, double size, int rank, in
             parts_out.clear();
         }
     } else {
-        std::list<particle_t> rec_buf;
-        receive_incoming_parts(rec_buf, 0);
-        for (particle_t& particle : rec_buf) {
+        receive_incoming_parts(incoming_parts, 0);
+        for (particle_t& particle : incoming_parts) {
             int xindex = static_cast<int>(particle.x / col_width);
             my_parts[xindex].push_back(particle);
         }
+        incoming_parts.clear();
     }
     if (rank == 0) {
         for (int out_proc = 1; out_proc < num_procs; ++out_proc) {
@@ -146,12 +146,12 @@ void init_simulation(particle_t* parts, int num_parts, double size, int rank, in
             parts_out.clear();
         }
     } else {
-        std::list<particle_t> rec_buf;
-        receive_incoming_parts(rec_buf, 0);
-        for (particle_t& particle : rec_buf) {
+        receive_incoming_parts(incoming_parts, 0);
+        for (particle_t& particle : incoming_parts) {
             int xindex = static_cast<int>(particle.x / col_width);
             ghost_parts[xindex].push_back(particle);
         }
+        incoming_parts.clear();
     }
 }
 void simulate_one_step(particle_t* parts, int num_parts, double size, int rank, int num_procs) {
@@ -180,6 +180,8 @@ void simulate_one_step(particle_t* parts, int num_parts, double size, int rank, 
     }
     
     // move particles and find outgoing particles
+    std::vector<std::list<particle_t>> move_bins;
+    move_bins.resize(bucket_num);
     for (int i = 0; i < bucket_num; ++i) {
         for (auto it = my_parts[i].begin(); it != my_parts[i].end();) {
             particle_t& particle = *it;
@@ -197,13 +199,19 @@ void simulate_one_step(particle_t* parts, int num_parts, double size, int rank, 
             else {
                 int xindex = static_cast<int>(particle.x / col_width);
                 if (xindex != i) {
-                    my_parts[xindex].push_back(particle);
+                    move_bins[xindex].push_back(particle);
                     it = my_parts[i].erase(it);  // Erase the element and advance the iterator
                 } else {
                     ++it;  // Move to the next element
                 }
             }
         }
+    }
+    for (int i = 0; i < bucket_num; ++i) {
+        for (particle_t& particle : move_bins[i]) {
+            my_parts[i].push_back(particle);
+        }
+        move_bins[i].clear();
     }
 
     // redistribute parts, split by even / odd to avoid dead lock
@@ -261,9 +269,9 @@ void simulate_one_step(particle_t* parts, int num_parts, double size, int rank, 
     }
 
     // send ghost parts, split by even / odd to avoid dead lock
-    for (std::list<particle_t>& particle_list : my_parts) {
+    for (int i = 0; i < bucket_num; ++i) {
         // Iterate over each particle in the list
-        for (particle_t& particle : particle_list) {
+        for (particle_t& particle : my_parts[i]) {
             if (rank - 1 >= 0 && abs(particle.y - rank * row_width) <= cutoff) {
                 below_ghost_parts.push_back(particle);
             }
@@ -329,13 +337,16 @@ void simulate_one_step(particle_t* parts, int num_parts, double size, int rank, 
 }
 #include <algorithm> // for std::sort
 void gather_for_save(particle_t* parts, int num_parts, double size, int rank, int num_procs) {
-    
+    double row_width = size / num_procs;
+    int bucket_num = static_cast<int>(size / cutoff);
+    double col_width = size / bucket_num;
+
     std::list<particle_t> rbuf;
     // make an array for sending
     std::list<particle_t> local_parts_array;
-    for (std::list<particle_t>& particle_list : my_parts) {
+    for (int i = 0; i < bucket_num; ++i) {
         // Iterate over each particle in the list
-        for (particle_t& particle : particle_list) {
+        for (particle_t& particle : my_parts[i]) {
             // Copy the particle to the current position in local_parts_array
             local_parts_array.push_back(particle);
         }
